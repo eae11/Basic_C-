@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Basic_C__",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "d1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d1-Debug-3a2230ad6c7d8bd88310.json",
+					"name" : "d1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "d2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d2-Debug-b9b2373f5b933f99a76c.json",
+					"name" : "d2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "d3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d3-Debug-f073235efbeb5d9902c9.json",
+					"name" : "d3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "d4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d4-Debug-3a9d733ba51ae30a6b26.json",
+					"name" : "d4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "d_005::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d_005-Debug-2531a7b423d440db88a6.json",
+					"name" : "d_005",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "d_006::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d_006-Debug-b7ee4bba61e115264b08.json",
+					"name" : "d_006",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "d_007::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d_007-Debug-1f5fabfafe433889066c.json",
+					"name" : "d_007",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "d_008::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-d_008-Debug-089f7419ddd17c969fa4.json",
+					"name" : "d_008",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "G:/Basic_C++/cmake-build-debug-visual-studio",
+		"source" : "G:/Basic_C++"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
