@@ -1,5 +1,8 @@
 #include <iostream>
+int ave(int a, int b){
+  return 0;
+}
 int main() {
-  std::cout << "da" << std::endl;
-std::cout << "b" << std::endl;
+  std::cout << __func__ << std::endl;
+
 }
