@@ -1,4 +1,0 @@
-ToolSet: 16.0 (local)@D:\VisualStudio
-Options: msvc.arch=x86
-
-Options:-DCMAKE_MAKE_PROGRAM=D:/CLion 2021.3.3/bin/ninja/win/ninja.exe
