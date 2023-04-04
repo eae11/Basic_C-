@@ -12,4 +12,6 @@ int main() {
     unsigned b{(unsigned )a};
     b>>=8;
     std::cout << std::bitset<32>(b)<<std::endl;
+
+
 }

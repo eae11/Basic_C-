@@ -22,7 +22,7 @@ void f1() {
 }
 }
 }
-namespace h1=hkd::hack;//命名空间取别名
+namespace h1 = hkd::hack;//命名空间取别名
 /*int hkd::b{250};//定义
 void hkd::test() {
   std::cout << hkd::b << std::endl;
@@ -43,6 +43,7 @@ int main() {
   int a = 50;
   std::cout << t::a << std::endl;
   std::cout << a << std::endl;
+  std::cout << ::a << std::endl;
   std::cout << hkd::b << std::endl;
   Thack();
   hkd::hack::f1();

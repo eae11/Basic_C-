@@ -11,9 +11,9 @@
  * add sp 8
  *
  * */
-/*int ave(int a, int b) {
+int ave(int a, int b) {
   return a+b;
-}*/
+}
 
 
 /*__stdcall 参数入栈顺序从右到左
@@ -25,6 +25,7 @@
  * call 0x...
  * ret 8
  * */
+
 /*int __stdcall ave(int a, int b) {
   return a + b;
 }*/
@@ -38,12 +39,14 @@
  mov edx,2
  mov ecx,1
  call 0x...
+ ...
+ ret
  ret
 */
 
-int __fastcall ave(int a, int b) {
+/*int __fastcall ave(int a, int b) {
   return a + b;
-}
+}*/
 int main() {
   ave(1, 2);
 }

@@ -1,7 +1,7 @@
 #include <iostream>
-#include "d_082_1.h"
+//#include "d_082_1.h"
 extern const int p = 999;//该名称在其他的转换单元中也有效
-//inline int p3=800;//有外部链接属性
+inline int p3=800;//有外部链接属性
 static int x = 260;//该名称仅仅在本转换单元中有效
 const int l=99;//该名称仅仅在本转换单元中有效
 /*
