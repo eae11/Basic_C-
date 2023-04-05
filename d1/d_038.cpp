@@ -2,28 +2,28 @@
 #include <vector>
 int main() {
 
-    std::vector<int> studentId;
+  std::vector<int> studentId;
 //    std::vector<int> studentId{1,2,3};
-//    std::vector<int> studentId(5);//5¸öÔªËØ
-//    std::vector<int> studentId(5,100);//5¸öÔªËØ,³õÖµ¶¼ÊÇ100
-    studentId.assign(5,100);//½«studentIdÖØĞÂ³õÊ¼»¯Î´ÓµÓĞ5¸öÔªËØÃ¿¸öÔªËØÎª100µÄ verctor
-//    studentId.clear();//Çå¿Õ
-//    studentId.empty();//ÅĞ¶ÏÊÇ·ñÎª¿Õ
+//    std::vector<int> studentId(5);//5ä¸ªå…ƒç´ 
+//    std::vector<int> studentId(5,100);//5ä¸ªå…ƒç´ ,åˆå€¼éƒ½æ˜¯100
+  studentId.assign(5,100);//å°†studentIdé‡æ–°åˆå§‹åŒ–æœªæ‹¥æœ‰5ä¸ªå…ƒç´ æ¯ä¸ªå…ƒç´ ä¸º100çš„ verctor
+//    studentId.clear();//æ¸…ç©º
+//    studentId.empty();//åˆ¤æ–­æ˜¯å¦ä¸ºç©º
 //    std::cout << studentId[2] << std::endl;
 //    std::cout << studentId.at(2) << std::endl;
-    int userId;
-    do {
+  int userId;
+  do {
 
-        std::cout << "ÇëÊäÈëÑ§ºÅ";
-        std::cin >> userId;
-        if (!userId) {
-            break;
-        }
-        studentId.push_back(userId);
-    } while (true);
-    for (auto &item : studentId) {
-        std::cout << item << std::endl;
+    std::cout << "è¯·è¾“å…¥å­¦å·";
+    std::cin >> userId;
+    if (!userId) {
+      break;
     }
+    studentId.push_back(userId);
+  } while (true);
+  for (auto &item : studentId) {
+    std::cout << item << std::endl;
+  }
 
 
 }

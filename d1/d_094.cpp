@@ -1,19 +1,19 @@
 #include <iostream>
 /*
-ÔÚÀàÖÐ»¹ÓÐÒ»ÖÖÌØÊâµÄ³ÉÔ±º¯Êý,½Ð×öÎö¹¹º¯Êý,Îö¹¹º¯ÊýÔÚÀàµÄÉúÃüÖÜ½áÊøÊ±,±»×Ô¶¯µ÷ÓÃ,
- Ò»°ãÓÃÀ´×öÉ¨Î²¹¤×÷,±ÈÈçÊÍ·ÅÄÚ´æ,¹Ø±Õ¾ä±úµÈµÈ,Èç¹ûÒ»¸öÀàÃ»ÓÐ¶¨ÒåÎö¹¹º¯Êý,
- ÄÇÃ´±àÒëÆ÷»á×Ô¶¯Ìí¼ÓÒ»¸ö¿ÕµÄÎö¹¹º¯Êý,Îö¹¹º¯ÊýÖ»ÄÜÓÐÒ»¸ö;
+åœ¨ç±»ä¸­è¿˜æœ‰ä¸€ç§ç‰¹æ®Šçš„æˆå‘˜å‡½æ•°,å«åšæžæž„å‡½æ•°,æžæž„å‡½æ•°åœ¨ç±»çš„ç”Ÿå‘½å‘¨ç»“æŸæ—¶,è¢«è‡ªåŠ¨è°ƒç”¨,
+ ä¸€èˆ¬ç”¨æ¥åšæ‰«å°¾å·¥ä½œ,æ¯”å¦‚é‡Šæ”¾å†…å­˜,å…³é—­å¥æŸ„ç­‰ç­‰,å¦‚æžœä¸€ä¸ªç±»æ²¡æœ‰å®šä¹‰æžæž„å‡½æ•°,
+ é‚£ä¹ˆç¼–è¯‘å™¨ä¼šè‡ªåŠ¨æ·»åŠ ä¸€ä¸ªç©ºçš„æžæž„å‡½æ•°,æžæž„å‡½æ•°åªèƒ½æœ‰ä¸€ä¸ª;
  */
 class Role {
  public:
   int* p;
   Role() {
     p = new int[100];
-    std::cout << "Àà±»´´½¨" << std::endl;
+    std::cout << "ç±»è¢«åˆ›å»º" << std::endl;
   }
   ~Role() {
     delete[] p;
-    std::cout << "Àà±»Ïú»Ù" << std::endl;
+    std::cout << "ç±»è¢«é”€æ¯" << std::endl;
   }
 };
 

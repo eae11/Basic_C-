@@ -3,48 +3,48 @@
 
 
 struct SArg {
-    int count; //²ÎÊıµÄ¸öÊı
-    char *cMem;
+  int count; //å‚æ•°çš„ä¸ªæ•°
+  char *cMem;
 };
 
 
 int Average(int count,...) {
 //    va_list arg;
-    char *arg{};
+  char *arg{};
 
-            va_start(arg,count);//²ÎÊıµÄ¸öÊı¸æËßËü
+  va_start(arg,count);//å‚æ•°çš„ä¸ªæ•°å‘Šè¯‰å®ƒ
 
 //    std::cout << "start:" << std::hex << (int) arg;
 
-    int sum{};
+  int sum{};
 
-    for (int i{}; i < count; i++) {
-        sum += va_arg(arg,int);//²ÎÊı¶¼ÊÇÊ²Ã´ÀàĞÍ va_arg()Ã¿µ÷ÓÃÒ»´Î Öµ¶¼»áÍùÏÂ¶Á
-    }
+  for (int i{}; i < count; i++) {
+    sum += va_arg(arg,int);//å‚æ•°éƒ½æ˜¯ä»€ä¹ˆç±»å‹ va_arg()æ¯è°ƒç”¨ä¸€æ¬¡ å€¼éƒ½ä¼šå¾€ä¸‹è¯»
+  }
 
-            va_end(arg);
+  va_end(arg);
 
-    sum = sum / count;
-    return sum;
+  sum = sum / count;
+  return sum;
 }
 
 int Ave(SArg &y) {
-    int sum{};
-    int *ary = (int *) y.cMem;
-    for (int i = 0; i < y.count; i++) {
-        sum += ary[i];
-    }
+  int sum{};
+  int *ary = (int *) y.cMem;
+  for (int i = 0; i < y.count; i++) {
+    sum += ary[i];
+  }
 
-    return sum / y.count;
+  return sum / y.count;
 }
 
 int main() {
-    int x = Average(5,562,321,256,541,120);
-    std::cout << "Æ½¾ùÊı:" << x;
+  int x = Average(5,562,321,256,541,120);
+  std::cout << "å¹³å‡æ•°:" << x;
 
-    SArg y;
-    y.count = 5;
-    y.cMem = (char *) new int[5]{562,321,256,541,120};
-    x = Ave(y);
-    std::cout << "Æ½¾ùÊı:" << x;
+  SArg y;
+  y.count = 5;
+  y.cMem = (char *) new int[5]{562,321,256,541,120};
+  x = Ave(y);
+  std::cout << "å¹³å‡æ•°:" << x;
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 /*
- * inlineÉùÃ÷Ò»¸öÄÚÁªº¯Êý
-ÄÚÁªº¯Êý½«»á½¨Òé±àÒëÆ÷°ÑÕâ¸öº¯Êý´¦Àí³ÉÄÚÁª´úÂëÒÔÌáÉýÐÔÄÜÊ¼ÖÕÊÇ½¨Òé,¾ßÌå±àÒëÆ÷ÊÇ·ñ²ÉÄÉ,ÓÉ±àÒëÆ÷¾ö¶¨
+ * inlineå£°æ˜Žä¸€ä¸ªå†…è”å‡½æ•°
+å†…è”å‡½æ•°å°†ä¼šå»ºè®®ç¼–è¯‘å™¨æŠŠè¿™ä¸ªå‡½æ•°å¤„ç†æˆå†…è”ä»£ç ä»¥æå‡æ€§èƒ½å§‹ç»ˆæ˜¯å»ºè®®,å…·ä½“ç¼–è¯‘å™¨æ˜¯å¦é‡‡çº³,ç”±ç¼–è¯‘å™¨å†³å®š
  * */
 inline int Add(int a, int b) {
   return a + b;

@@ -24,11 +24,11 @@ class T2 {
   }
 };
 void SetHP(T& t, T2& t2) {
-  t.hp = 250;//friend 可以访问私有变量
+  t.hp = 250;//friend 鍙互璁块棶绉佹湁鍙橀噺
 }
 void SetMP(T& t, T2& t2) {
   t.mp = 250;
-  t.GetMP();//friend 可以访问私有函数
+  t.GetMP();//friend 鍙互璁块棶绉佹湁鍑芥暟
 }
 int main() {
   T t1;

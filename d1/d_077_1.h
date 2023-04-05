@@ -6,7 +6,7 @@ int bigger(int a, int b);
 extern int acount;
 static int atest = 999;
 
-//¾²Ì¬º¯ÊıºÍÄÚÁªº¯Êı¿ÉÒÔÔÚÍ·ÎÄ¼şÖĞ¶¨Òå
+//é™æ€å‡½æ•°å’Œå†…è”å‡½æ•°å¯ä»¥åœ¨å¤´æ–‡ä»¶ä¸­å®šä¹‰
 static void test() {
 
 }

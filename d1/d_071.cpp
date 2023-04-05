@@ -2,31 +2,31 @@
 
 template<typename type1>
 type1 bigger(type1 a,type1 b,type1 c) {
-    return a + b + c;
+  return a + b + c;
 }
 
 template<typename type1>
 type1 bigger(type1 a,type1 b) {
-    return a > b ? a : b;
+  return a > b ? a : b;
 }
 
 template<>
-int *bigger(int *a,int *b) {//º¯ÊıÄ£°åµÄÀıÍâÇé¿ö
-    return *a > *b ? a : b;
+int *bigger(int *a,int *b) {//å‡½æ•°æ¨¡æ¿çš„ä¾‹å¤–æƒ…å†µ
+  return *a > *b ? a : b;
 }
 
-int *bigger(int *a,int *b) {//º¯ÊıÖØÔØ
-    return *a > *b ? a : b;
+int *bigger(int *a,int *b) {//å‡½æ•°é‡è½½
+  return *a > *b ? a : b;
 }
 
 int main() {
 
-    int a{200},b{100},c{};
-    c = bigger(a,b);
-    std::cout << c << std::endl;
-    c = *bigger(&a,&b);//º¯ÊıÖØÔØÓÅÏÈÓÚº¯ÊıÄ£°å
-    std::cout << c << std::endl;
+  int a{200},b{100},c{};
+  c = bigger(a,b);
+  std::cout << c << std::endl;
+  c = *bigger(&a,&b);//å‡½æ•°é‡è½½ä¼˜å…ˆäºå‡½æ•°æ¨¡æ¿
+  std::cout << c << std::endl;
 
-    bigger(1,2,3);//º¯ÊıÄ£°åÒ²¿ÉÒÔÖØÔØ
+  bigger(1,2,3);//å‡½æ•°æ¨¡æ¿ä¹Ÿå¯ä»¥é‡è½½
 
 }

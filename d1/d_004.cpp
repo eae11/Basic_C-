@@ -1,21 +1,21 @@
 #include <iostream>
 
 int main() {
-    std::cout << 23l << std::endl;//l´ú±ílongÀàĞÍ
-    std::cout << 23ll << std::endl;//ll->long longÀàĞÍ
-    std::cout << 23ull << std::endl;//unsigned long longÀàĞÍ
-    std::cout << 230.0L << std::endl;//long double
-    std::cout << 130.0 << std::endl;//double
-    std::cout << 130.0f << std::endl;//float
+  std::cout << 23l << std::endl;//lä»£è¡¨longç±»å‹
+  std::cout << 23ll << std::endl;//ll->long longç±»å‹
+  std::cout << 23ull << std::endl;//unsigned long longç±»å‹
+  std::cout << 230.0L << std::endl;//long double
+  std::cout << 130.0 << std::endl;//double
+  std::cout << 130.0f << std::endl;//float
 
-    float a{65923600.0}, b{0.000001}, c{a + b};
-    std::cout << "c=" << c<<std::endl;
+  float a{65923600.0}, b{0.000001}, c{a + b};
+  std::cout << "c=" << c<<std::endl;
 
-    std::cout << "ÊäÈëÔ²µÄÖ±¾¶"<<std::endl;
-    double d;
-    std::cin>>d;
-    double r{d/2};
-    double s{r*r*3.141};
+  std::cout << "è¾“å…¥åœ†çš„ç›´å¾„"<<std::endl;
+  double d;
+  std::cin>>d;
+  double r{d/2};
+  double s{r*r*3.141};
 
-    std::cout << "Ö±¾¶Îª"<<d <<"µÄÔ²µÄÃæ»ıÎª"<<s<<"Æ½·½ÀåÃ×"<< std::endl;
+  std::cout << "ç›´å¾„ä¸º"<<d <<"çš„åœ†çš„é¢ç§¯ä¸º"<<s<<"å¹³æ–¹å˜ç±³"<< std::endl;
 }

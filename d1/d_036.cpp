@@ -1,17 +1,17 @@
 #include <iostream>
 
 int main() {
-    int studentId[3][5]{
-            {101,2,3,4,5},
-            {1,  2,3,4,5},
-            {1,  2,3,4,4}
-    };
-    for (int i = 0; i < 3; ++i) {
-        int count{};
-        for (auto &item: studentId[i]) {
-            count++;
-            std::cout << "µÚ" << i + 1 << "°àµÄµÚ" <<count<<"¸öÍ¬Ñ§µÄÑ§ºÅÎª"<< item << std::endl;
-        }
+  int studentId[3][5]{
+      {101,2,3,4,5},
+      {1,  2,3,4,5},
+      {1,  2,3,4,4}
+  };
+  for (int i = 0; i < 3; ++i) {
+    int count{};
+    for (auto &item: studentId[i]) {
+      count++;
+      std::cout << "ç¬¬" << i + 1 << "ç­çš„ç¬¬" <<count<<"ä¸ªåŒå­¦çš„å­¦å·ä¸º"<< item << std::endl;
     }
+  }
 
 }

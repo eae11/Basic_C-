@@ -3,37 +3,37 @@
 
 int main() {
 
-    std::cout << std::fixed;//ÒÔĞ¡ÊıÄ£Ê½Êä³ö
-    std::cout << 3e20 << '\n';
+  std::cout << std::fixed;//ä»¥å°æ•°æ¨¡å¼è¾“å‡º
+  std::cout << 3e20 << '\n';
 
-    std::cout << std::scientific;//¿ÆÑ§¼ÆÊı·¨
-    std::cout << 3.1546 << std::endl;
+  std::cout << std::scientific;//ç§‘å­¦è®¡æ•°æ³•
+  std::cout << 3.1546 << std::endl;
 
-    std::cout << std::defaultfloat;//»Ö¸´Ä¬ÈÏ
-    std::cout << 3.1546 << std::endl;
+  std::cout << std::defaultfloat;//æ¢å¤é»˜è®¤
+  std::cout << 3.1546 << std::endl;
 
-    std::cout << std::setprecision(3);//ÉèÖÃĞ¡Êı¾«¶È°üº¬ÕûÊı²¿Î»
-    std::cout << 43.1545646 << std::endl;
+  std::cout << std::setprecision(3);//è®¾ç½®å°æ•°ç²¾åº¦åŒ…å«æ•´æ•°éƒ¨ä½
+  std::cout << 43.1545646 << std::endl;
 
-    std::cout << std::showbase;//Ê®½øÖÆºÍ°Ë½øÖÆÏÔÊ¾Ç°×º
-//    std::cout << std::noshowbase;//¹Ø±Õ
-    std::cout << 65535 << std::endl;
+  std::cout << std::showbase;//åè¿›åˆ¶å’Œå…«è¿›åˆ¶æ˜¾ç¤ºå‰ç¼€
+//    std::cout << std::noshowbase;//å…³é—­
+  std::cout << 65535 << std::endl;
 
-    std::cout << std::hex;
-    std::cout << (long long) 65535 * 65535 << std::endl;
+  std::cout << std::hex;
+  std::cout << (long long) 65535 * 65535 << std::endl;
 
-    std::cout << std::oct;
-    std::cout << 8 << std::endl;
+  std::cout << std::oct;
+  std::cout << 8 << std::endl;
 
-    std::cout << std::dec;
-    std::cout << std::left;//×ó±ß¶ÔÆë Ä¬ÈÏÓÒ±ß
-    std::cout << std::setw(10)<<221 << std::endl;//std::setw(10)ÉèÖÃÒ»´ÎÓÃÒ»´Î Ö®Ç°¶¼ÊÇÉèÖÃÒ»´ÎÒ»Ö±ÓĞĞ§
-    std::cout << std::setw(10)<<21 << std::endl;
-    std::cout << std::setfill('*')<<std::setw(10)<<45645 ;
-    std::cout <<std::setw(10)<<21665 << std::endl;
+  std::cout << std::dec;
+  std::cout << std::left;//å·¦è¾¹å¯¹é½ é»˜è®¤å³è¾¹
+  std::cout << std::setw(10)<<221 << std::endl;//std::setw(10)è®¾ç½®ä¸€æ¬¡ç”¨ä¸€æ¬¡ ä¹‹å‰éƒ½æ˜¯è®¾ç½®ä¸€æ¬¡ä¸€ç›´æœ‰æ•ˆ
+  std::cout << std::setw(10)<<21 << std::endl;
+  std::cout << std::setfill('*')<<std::setw(10)<<45645 ;
+  std::cout <<std::setw(10)<<21665 << std::endl;
 
-    std::cout << std::right;
-    std::cout << "Å¾àªÅ¾àªÅÂ"<<std::setw(20)<<"12 "<<"66";
+  std::cout << std::right;
+  std::cout << "å•ªå—’å•ªå—’æ€•"<<std::setw(20)<<"12 "<<"66";
 
 
 }

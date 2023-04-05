@@ -4,12 +4,12 @@
 
 int main() {
 
-    int lv = _getch();
-    if (lv == 'l' || lv == 'L') {
-        for (int i = 1; i <= 100; ++i) {
-            std::cout << std::setfill(' ') << "\nµÈ¼¶" << std::setw(3) << i;
-            std::cout << "           ËùÐèÒªµÄ¾­ÑéÎª:" << i * i * 100;
-        }
+  int lv = _getch();
+  if (lv == 'l' || lv == 'L') {
+    for (int i = 1; i <= 100; ++i) {
+      std::cout << std::setfill(' ') << "\nç­‰çº§" << std::setw(3) << i;
+      std::cout << "           æ‰€éœ€è¦çš„ç»éªŒä¸º:" << i * i * 100;
     }
+  }
 
 }

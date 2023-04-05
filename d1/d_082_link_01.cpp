@@ -1,15 +1,15 @@
 #include <iostream>
 //#include "d_082_1.h"
-extern const int p = 999;//¸ÃÃû³ÆÔÚÆäËûµÄ×ª»»µ¥ÔªÖĞÒ²ÓĞĞ§
-inline int p3=800;//ÓĞÍâ²¿Á´½ÓÊôĞÔ
-static int x = 260;//¸ÃÃû³Æ½ö½öÔÚ±¾×ª»»µ¥ÔªÖĞÓĞĞ§
-const int l=99;//¸ÃÃû³Æ½ö½öÔÚ±¾×ª»»µ¥ÔªÖĞÓĞĞ§
+extern const int p = 999;//è¯¥åç§°åœ¨å…¶ä»–çš„è½¬æ¢å•å…ƒä¸­ä¹Ÿæœ‰æ•ˆ
+inline int p3=800;//æœ‰å¤–éƒ¨é“¾æ¥å±æ€§
+static int x = 260;//è¯¥åç§°ä»…ä»…åœ¨æœ¬è½¬æ¢å•å…ƒä¸­æœ‰æ•ˆ
+const int l=99;//è¯¥åç§°ä»…ä»…åœ¨æœ¬è½¬æ¢å•å…ƒä¸­æœ‰æ•ˆ
 /*
 void test (){
   std::cout << "test" << std::endl;
 }*/
 void f2(){
-  std::cout << p3 << std::endl;//²»ÊÇ800¶øÊÇ600
+  std::cout << p3 << std::endl;//ä¸æ˜¯800è€Œæ˜¯600
   std::cout << x << std::endl;//260
   std::cout << l << std::endl;//99
 }

@@ -4,27 +4,27 @@
 using std::string;
 
 int main() {
-    string str{"12345"};
-    std::cout << str[0] << std::endl;
+  string str{"12345"};
+  std::cout << str[0] << std::endl;
 
-    std::cout << (int) &str << " " << (int) &str[0] << " " << (int) &str[1] << std::endl;
-    str = str + "65ssssssssssss";
-    std::cout << (int) &str << " " << (int) &str[0] << " " << (int) &str[1] << std::endl;
+  std::cout << (int) &str << " " << (int) &str[0] << " " << (int) &str[1] << std::endl;
+  str = str + "65ssssssssssss";
+  std::cout << (int) &str << " " << (int) &str[0] << " " << (int) &str[1] << std::endl;
 
-    const char *baseStr = str.c_str();
-//    char* dataStr = str.data();//·µ»ØµÄÊÇ·Ç³£Á¿Ö¸Õë¿ÉÒÔĞŞ¸ÄÀïÃæÄÚÈİ
-    std::cout << (int) &str << " " << (int) &str[0] << " " << (int) &str[1] << " " << (int) baseStr << std::endl;
+  const char *baseStr = str.c_str();
+//    char* dataStr = str.data();//è¿”å›çš„æ˜¯éå¸¸é‡æŒ‡é’ˆå¯ä»¥ä¿®æ”¹é‡Œé¢å†…å®¹
+  std::cout << (int) &str << " " << (int) &str[0] << " " << (int) &str[1] << " " << (int) baseStr << std::endl;
 //    dataStr[0] = '5';
-    std::cout << (int) str[str.length()]<<std::endl;//c++11±ê×¼ºóc++×Ö·û´®Ò²ÒÔ'\0'½áÎ²
+  std::cout << (int) str[str.length()]<<std::endl;//c++11æ ‡å‡†åc++å­—ç¬¦ä¸²ä¹Ÿä»¥'\0'ç»“å°¾
 
 
-    int x = std::stoi("15963");
-    std::cout << x + 1;
+  int x = std::stoi("15963");
+  std::cout << x + 1;
 
-    std::stringstream strS;
-    strS << "ÄãºÃ" << "123["<<std::hex<<1250<<"]";
+  std::stringstream strS;
+  strS << "ä½ å¥½" << "123["<<std::hex<<1250<<"]";
 
-    string a = strS.str();
-    std::cout << a;
+  string a = strS.str();
+  std::cout << a;
 
 }

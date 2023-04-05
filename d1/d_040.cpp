@@ -1,31 +1,31 @@
-// class11.1.cpp : ´ËÎÄ¼ş°üº¬ "main" º¯Êı¡£³ÌĞòÖ´ĞĞ½«ÔÚ´Ë´¦¿ªÊ¼²¢½áÊø¡£
+// class11.1.cpp : æ­¤æ–‡ä»¶åŒ…å« "main" å‡½æ•°ã€‚ç¨‹åºæ‰§è¡Œå°†åœ¨æ­¤å¤„å¼€å§‹å¹¶ç»“æŸã€‚
 //
 
 #include <iostream>
 
 int main() {
-    float c{500.0f};
-    int a{5000};
-    int *pa{&a};
+  float c{500.0f};
+  int a{5000};
+  int *pa{&a};
 
 
-    (*pa)++;
+  (*pa)++;
 
-    std::cout << "ÄÚ´æµØÖ·:" << pa << "\na=" << *pa<<std::endl;
-    int studentId[2][2]
-            {
-                    {10001,10002},
-                    {20001,20002}
-            };
+  std::cout << "å†…å­˜åœ°å€:" << pa << "\na=" << *pa<<std::endl;
+  int studentId[2][2]
+      {
+          {10001,10002},
+          {20001,20002}
+      };
 
-    int *ptrStudentId[2][2];
+  int *ptrStudentId[2][2];
 
-    for (int x = 0; x < 2; x++) {
-        for (int y = 0; y < 2; y++) {
-            ptrStudentId[x][y] = &studentId[x][y];
+  for (int x = 0; x < 2; x++) {
+    for (int y = 0; y < 2; y++) {
+      ptrStudentId[x][y] = &studentId[x][y];
 
-            std::cout << "ÄÚ´æµØÖ·:" << ptrStudentId[x][y] << "Öµ" << *ptrStudentId[x][y] << "\n";
-        }
+      std::cout << "å†…å­˜åœ°å€:" << ptrStudentId[x][y] << "å€¼" << *ptrStudentId[x][y] << "\n";
     }
+  }
 }
 

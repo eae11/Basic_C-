@@ -2,22 +2,22 @@
 #include <array>
 
 int main() {
-    int studentIdA[2]{999,999};
-    int studentIdB[2]{999,999};
-    std::array<int,2> studentId{10001,10002};//2¸öÔªËØ
-    std::array<int,2> studentIdD{10001,10002};
-//    std::cout << studentIdA[100] << std::endl;//ÄÜ·ÃÎÊµ½100²»°²È«
+  int studentIdA[2]{999,999};
+  int studentIdB[2]{999,999};
+  std::array<int,2> studentId{10001,10002};//2ä¸ªå…ƒç´ 
+  std::array<int,2> studentIdD{10001,10002};
+//    std::cout << studentIdA[100] << std::endl;//èƒ½è®¿é—®åˆ°100ä¸å®‰å…¨
 
-//    std::cout << studentId.at(100) << std::endl;//Å×Òì³£
+//    std::cout << studentId.at(100) << std::endl;//æŠ›å¼‚å¸¸
 
-    std::cout << studentId.size() << std::endl;//2
-    studentId.fill(999);
-    studentIdD.fill(999);
-    for (auto &item : studentId) {
-        std::cout << item << std::endl;
-    }
+  std::cout << studentId.size() << std::endl;//2
+  studentId.fill(999);
+  studentIdD.fill(999);
+  for (auto &item : studentId) {
+    std::cout << item << std::endl;
+  }
 
-    std::cout <<( studentIdA==studentIdB) << std::endl;//false
-    std::cout << (studentId == studentIdD) << std::endl;//true
+  std::cout <<( studentIdA==studentIdB) << std::endl;//false
+  std::cout << (studentId == studentIdD) << std::endl;//true
 
 }

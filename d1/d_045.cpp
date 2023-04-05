@@ -1,32 +1,32 @@
 #include <iostream>
 
 int main() {
-    int a{5250};
-    int c{3000};
-    int &la{a};//¶¼ÊÇaµÄÒıÓÃ
-    int &la1{la};
-    int &la2{a};
-    la2++;
-    std::cout << a << std::endl;
-    std::cout << la << std::endl;
+  int a{5250};
+  int c{3000};
+  int &la{a};//éƒ½æ˜¯açš„å¼•ç”¨
+  int &la1{la};
+  int &la2{a};
+  la2++;
+  std::cout << a << std::endl;
+  std::cout << la << std::endl;
 
-    std::cout << &a << std::endl;
-    std::cout << &la << std::endl;
-    std::cout << &la1 << std::endl;
-    std::cout << &la2 << std::endl;//µØÖ·¶¼Ò»Ñù
+  std::cout << &a << std::endl;
+  std::cout << &la << std::endl;
+  std::cout << &la1 << std::endl;
+  std::cout << &la2 << std::endl;//åœ°å€éƒ½ä¸€æ ·
 
-    la = c;//ÒıÓÃÒ»µ©Éè¶¨¾Í²»ÄÜ¸Ä±äÁË, ÕâÀïÏàµ±ÓÚa=c
-    std::cout << a << std::endl;
+  la = c;//å¼•ç”¨ä¸€æ—¦è®¾å®šå°±ä¸èƒ½æ”¹å˜äº†, è¿™é‡Œç›¸å½“äºa=c
+  std::cout << a << std::endl;
 
-    int b[]{1001,1002,1003,1004};
-    /*for (auto x: b) {
-        x++;//¾Ö²¿±äÁ¿bÀïÃæµÄÖµ²»»á¸Ä±ä
-    }*/
-    for (auto &x: b) {
-        x++;//bÀïÃæµÄÖµ»á¸Ä±ä
-    }
-    for (auto x: b) {
-        std::cout << x << std::endl;
-    }
+  int b[]{1001,1002,1003,1004};
+  /*for (auto x: b) {
+      x++;//å±€éƒ¨å˜é‡bé‡Œé¢çš„å€¼ä¸ä¼šæ”¹å˜
+  }*/
+  for (auto &x: b) {
+    x++;//bé‡Œé¢çš„å€¼ä¼šæ”¹å˜
+  }
+  for (auto x: b) {
+    std::cout << x << std::endl;
+  }
 
 }

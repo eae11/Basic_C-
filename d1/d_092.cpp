@@ -14,11 +14,11 @@ class T {
 
   T() = default;
   /*T() {
-    std::cout << "ÎÞ²Î¹¹Ôìº¯Êý" << std::endl;
+    std::cout << "æ— å‚æž„é€ å‡½æ•°" << std::endl;
   }*/
   T(int hp, int mp) {
     std::cout << hp << mp << std::endl;
-    std::cout << "ÓÐ²Î¹¹Ôìº¯Êý" << std::endl;
+    std::cout << "æœ‰å‚æž„é€ å‡½æ•°" << std::endl;
     this->mp = mp;
     this->hp = hp;
   }

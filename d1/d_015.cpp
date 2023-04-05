@@ -5,21 +5,21 @@
  * a^c=b
  */
 int main() {
-    unsigned int diamond{6000};
-    unsigned int vip_exp{80000};
+  unsigned int diamond{6000};
+  unsigned int vip_exp{80000};
 
-    unsigned xbase=diamond^vip_exp;
+  unsigned xbase=diamond^vip_exp;
 
-    std::cout << "ÐÞ¸Ä×êÊ¯ÊýÁ¿"<<std::endl;
-    std::cin >> diamond;
-    std::cout << "ÐÞ¸ÄÀÛ¼ÆÏû·Ñ"<<std::endl;
-    std::cin >> vip_exp;
-    /*Ä£Äâ¼ì²âÒ»´Î*/
+  std::cout << "ä¿®æ”¹é’»çŸ³æ•°é‡"<<std::endl;
+  std::cin >> diamond;
+  std::cout << "ä¿®æ”¹ç´¯è®¡æ¶ˆè´¹"<<std::endl;
+  std::cin >> vip_exp;
+  /*æ¨¡æ‹Ÿæ£€æµ‹ä¸€æ¬¡*/
 
-    unsigned realDiamond = xbase ^ vip_exp;
-    unsigned realVip_exp= xbase ^ diamond;
+  unsigned realDiamond = xbase ^ vip_exp;
+  unsigned realVip_exp= xbase ^ diamond;
 
-    std::cout << "ÄãÏÖÔÚµÄ×êÊ¯ÊýÁ¿"<<diamond<<"ÄãÓ¦¸ÃµÄ×êÊ¯ÊýÁ¿"<<realDiamond<<std::endl;
-    std::cout << "ÄãÏÖÔÚµÄÀÛ¼ÆÏû·Ñ"<<vip_exp<<"ÄãÓ¦¸ÃµÄÀÛ¼ÆÏû·Ñ"<<realVip_exp<<std::endl;
+  std::cout << "ä½ çŽ°åœ¨çš„é’»çŸ³æ•°é‡"<<diamond<<"ä½ åº”è¯¥çš„é’»çŸ³æ•°é‡"<<realDiamond<<std::endl;
+  std::cout << "ä½ çŽ°åœ¨çš„ç´¯è®¡æ¶ˆè´¹"<<vip_exp<<"ä½ åº”è¯¥çš„ç´¯è®¡æ¶ˆè´¹"<<realVip_exp<<std::endl;
 
 }

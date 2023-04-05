@@ -2,65 +2,65 @@
 
 template<typename T1,typename T2>
 T1 ave(T1 a,T2 b) {
-    return (a + b) / 2;
+  return (a + b) / 2;
 }
 
 template<typename T1,typename T2,typename TR>
 TR ave2(T1 a,T2 b) {
-    return (a + b) / 2;
+  return (a + b) / 2;
 }
 
 template<typename TR,typename T1,typename T2>
 TR ave3(T1 a,T2 b) {
-    return (a + b) / 2;
+  return (a + b) / 2;
 }
 
 template<typename TR,typename T1,typename T2>
 TR ave4(int a,T1 b,T2 c,int d = 200) {
-    T1 x;
-    T2 y;
-    return (a + b) / 2;
+  T1 x;
+  T2 y;
+  return (a + b) / 2;
 }
 
 template<typename T1,typename T2>
 auto bigger(T1 a,T2 b) -> decltype(a > b ? a : b) {
-    return a > b ? a : b;
+  return a > b ? a : b;
 }
 
 template<typename T1,typename T2>
 decltype(auto) bigger2(T1 &a,T2 &b) {
-    return a > b ? a : b;
+  return a > b ? a : b;
 }
 
 int main() {
-   /* std::cout << ave(100,200.2f) << std::endl;
-    std::cout << ave<float,int>(100.2F,200.2F) << std::endl;
-    std::cout << ave2<int,float,double>(100,200.2f) << std::endl;
-    std::cout << ave3<double>(100,200.2f) << std::endl;
+  /* std::cout << ave(100,200.2f) << std::endl;
+   std::cout << ave<float,int>(100.2F,200.2F) << std::endl;
+   std::cout << ave2<int,float,double>(100,200.2f) << std::endl;
+   std::cout << ave3<double>(100,200.2f) << std::endl;
 
-    char a = 50;
-    int b = 50000;
-    std::cout << bigger(a,b) << std::endl;*/
+   char a = 50;
+   int b = 50000;
+   std::cout << bigger(a,b) << std::endl;*/
 
-   /* char a = 5;
-    int b = 50;
-    decltype(a > b ? a : b) x;//ÎªÊ²Ã´²»·µ»Øint & ÒòÎªÈç¹ûa±È½Ï´ó ·µ»Ø int &p=a; int &ÊÇ²»ÄÜÖ¸ÏòÒ»¸öcharÀàĞÍµÄ*/
-
-
-
-
-    /*float a = 50;
-    int b = 5000;
-//    float &lx=b;//Èç¹ûb´ó»áÇ¿×ª³Éfloat,floatÒıÓÃ²»ÄÜÖ¸ÏòÒ»¸öintÖµ,Òò´Ë²»»á·µ»ØÒ»¸öfloatÒıÓÃ
-    bigger2(a,b);*/
+  /* char a = 5;
+   int b = 50;
+   decltype(a > b ? a : b) x;//ä¸ºä»€ä¹ˆä¸è¿”å›int & å› ä¸ºå¦‚æœaæ¯”è¾ƒå¤§ è¿”å› int &p=a; int &æ˜¯ä¸èƒ½æŒ‡å‘ä¸€ä¸ªcharç±»å‹çš„*/
 
 
 
 
+  /*float a = 50;
+  int b = 5000;
+//    float &lx=b;//å¦‚æœbå¤§ä¼šå¼ºè½¬æˆfloat,floatå¼•ç”¨ä¸èƒ½æŒ‡å‘ä¸€ä¸ªintå€¼,å› æ­¤ä¸ä¼šè¿”å›ä¸€ä¸ªfloatå¼•ç”¨
+  bigger2(a,b);*/
 
-    /*int a = 1;
-    double b = 5;
-    ++(a > b ? a : b);*/
-   /* int a = 5,b = 3;
-    ++(a > b ? a : b);*/
+
+
+
+
+  /*int a = 1;
+  double b = 5;
+  ++(a > b ? a : b);*/
+  /* int a = 5,b = 3;
+   ++(a > b ? a : b);*/
 }

@@ -3,26 +3,26 @@
 int main() {
 
 
-    char inKey{};
-    do {
-        int num;
-        std::cout << "ÇëÊäÈëÒ»¸öÊý";
-        std::cin >> num;
-        bool flag;
-        flag = (num % 2 != 0);
-        for (int i = 3; (flag) && (i <= sqrt(num)); i+=2) {
-            if (num % i == 0) {
-                flag = false;
-                break;
-            }
-        }
-        if (flag) {
-            std::cout << "ÊÇÖÊÊý";
-        } else {
-            std::cout << "²»ÊÇÖÊÊý";
-        }
-        std::cout << "°´y¼ÌÐøÆäËûÈÎÒâ¼üÍË³ö";
-        std::cin >> inKey;
-    } while (inKey == 'y' || inKey == 'Y');
+  char inKey{};
+  do {
+    int num;
+    std::cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•°";
+    std::cin >> num;
+    bool flag;
+    flag = (num % 2 != 0);
+    for (int i = 3; (flag) && (i <= sqrt(num)); i+=2) {
+      if (num % i == 0) {
+        flag = false;
+        break;
+      }
+    }
+    if (flag) {
+      std::cout << "æ˜¯è´¨æ•°";
+    } else {
+      std::cout << "ä¸æ˜¯è´¨æ•°";
+    }
+    std::cout << "æŒ‰yç»§ç»­å…¶ä»–ä»»æ„é”®é€€å‡º";
+    std::cin >> inKey;
+  } while (inKey == 'y' || inKey == 'Y');
 
 }

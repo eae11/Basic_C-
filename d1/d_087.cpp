@@ -1,26 +1,26 @@
 #include <iostream>
-//¹Ø±Õassert µÃ¶¨ÒåÔÚ#include <cassert>Ö®Ç°
+//å…³é—­assert å¾—å®šä¹‰åœ¨#include <cassert>ä¹‹å‰
 //#define NDEBUG
 //#include <cassert>
 //#define assert(expression) ((void)0)
 
-/*assert(bool±í´ïÊ½);
-Èç¹ûÀ¨ºÅÄÚµÄbool±í´ïÊ½Îªfalse
-Ôò»áµ÷ÓÃstd::abort()º¯Êı
-µ¯³öÓÒÃæµÄ¶Ô»°¿ò
-assertºêĞèÒªÍ·ÎÄ¼şcassert
+/*assert(boolè¡¨è¾¾å¼);
+å¦‚æœæ‹¬å·å†…çš„boolè¡¨è¾¾å¼ä¸ºfalse
+åˆ™ä¼šè°ƒç”¨std::abort()å‡½æ•°
+å¼¹å‡ºå³é¢çš„å¯¹è¯æ¡†
+assertå®éœ€è¦å¤´æ–‡ä»¶cassert
 
-static_assertÓÃÓÚ±àÒëÊ±¼ì²éÌõ¼ş
+static_assertç”¨äºç¼–è¯‘æ—¶æ£€æŸ¥æ¡ä»¶
 
-static_assert(bool±í´ïÊ½"´íÎóĞÅÏ¢");
-C++17ĞÂÓï·¨
-static_assert(bool±í´ïÊ½);
-Óëassert²»Í¬,static_assertÖ÷ÒªÊÇÓÃÀ´ÔÚ±àÒëÊ±¼ì²éÖØÒªµÄÌõ¼ş
-Òò´Ë¼ì²éµÄbool±í´ïÊ½ÖĞ,Ö»ÄÜÓÃÓÚ³£Á¿
+static_assert(boolè¡¨è¾¾å¼"é”™è¯¯ä¿¡æ¯");
+C++17æ–°è¯­æ³•
+static_assert(boolè¡¨è¾¾å¼);
+ä¸assertä¸åŒ,static_assertä¸»è¦æ˜¯ç”¨æ¥åœ¨ç¼–è¯‘æ—¶æ£€æŸ¥é‡è¦çš„æ¡ä»¶
+å› æ­¤æ£€æŸ¥çš„boolè¡¨è¾¾å¼ä¸­,åªèƒ½ç”¨äºå¸¸é‡
 
 */
 int main() {
-  std::cout << "ÇëÊäÈëÒ»¸öÕûÊı" << std::endl;
+  std::cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°" << std::endl;
   int c;
   std::cin >> c;
 //  assert(c);

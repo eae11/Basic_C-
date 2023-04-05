@@ -1,20 +1,20 @@
 #include <iostream>
 /*
-¶ÔÓÚÆÕÍ¨µÄÊý¾ÝÀàÐÍÀ´ËµmallocºÍnewÃ»Ê²Ã´Çø±ð,µ«ÊÇ¶ÔÓÚÀàÀ´Ëµ,malloc½ö½öÊÇ·ÖÅäÄÚ,¶ønew³ýÁË·ÖÅäÄÚ´æÒÔÍâ»¹»áµ÷ÓÃ¹¹Ôìº¯Êý!
-¶ÔÓÚÆÕÍ¨µÄÊý¾ÝÀàÐÍÀ´ËµfreeºÍdeleteÉèÓÐÊ²Ã´Çø±ð,µ«ÊÇ¶ÔÓÚÀàÀ´Ëµ,free½ö½öÊÇÊÍ·ÅÄÚ´æ¿Õ¼ä,¶ødelete²»½öÊÍ·ÅÄÚ´æ¿Õ¼ä,»¹»áµ÷ÓÃÀàµÄÎö¹¹º¯Êý
-¶ÔÓÚÆÕÍ¨µÄÊý¾ÝÀàÐÍÀ´ËµdeleteºÍdelete[]Ã»ÓÐÊ²Ã´Çø±ð,µ«ÊÇ¶ÔÓÚÀàÀ´Ëµ,delete½ö½öÊÇÊÍ·ÅÄÚ´æ¿Õ¼ä,ÇÒµ÷ÓÃµÚÒ»¸öÔªËØµÄÎö¹¹º¯Êý,
-¶ødelete²»½öÊÍ·ÅÄÚ´æ¿Õ¼ä,»¹»áµ÷ÓÃÃ¿Ò»¸öÔªËØµÄÎö¹¹º¯Êý
+å¯¹äºŽæ™®é€šçš„æ•°æ®ç±»åž‹æ¥è¯´mallocå’Œnewæ²¡ä»€ä¹ˆåŒºåˆ«,ä½†æ˜¯å¯¹äºŽç±»æ¥è¯´,mallocä»…ä»…æ˜¯åˆ†é…å†…,è€Œnewé™¤äº†åˆ†é…å†…å­˜ä»¥å¤–è¿˜ä¼šè°ƒç”¨æž„é€ å‡½æ•°!
+å¯¹äºŽæ™®é€šçš„æ•°æ®ç±»åž‹æ¥è¯´freeå’Œdeleteè®¾æœ‰ä»€ä¹ˆåŒºåˆ«,ä½†æ˜¯å¯¹äºŽç±»æ¥è¯´,freeä»…ä»…æ˜¯é‡Šæ”¾å†…å­˜ç©ºé—´,è€Œdeleteä¸ä»…é‡Šæ”¾å†…å­˜ç©ºé—´,è¿˜ä¼šè°ƒç”¨ç±»çš„æžæž„å‡½æ•°
+å¯¹äºŽæ™®é€šçš„æ•°æ®ç±»åž‹æ¥è¯´deleteå’Œdelete[]æ²¡æœ‰ä»€ä¹ˆåŒºåˆ«,ä½†æ˜¯å¯¹äºŽç±»æ¥è¯´,deleteä»…ä»…æ˜¯é‡Šæ”¾å†…å­˜ç©ºé—´,ä¸”è°ƒç”¨ç¬¬ä¸€ä¸ªå…ƒç´ çš„æžæž„å‡½æ•°,
+è€Œdeleteä¸ä»…é‡Šæ”¾å†…å­˜ç©ºé—´,è¿˜ä¼šè°ƒç”¨æ¯ä¸€ä¸ªå…ƒç´ çš„æžæž„å‡½æ•°
  */
 class T {
   int m_count{};
   inline static int count{};
  public:
   T() {
-    std::cout << "µÚ" << ++count << "¸öT±»¹¹Ôì" << std::endl;
+    std::cout << "ç¬¬" << ++count << "ä¸ªTè¢«æž„é€ " << std::endl;
     m_count = count;
   }
   ~T() {
-    std::cout << "µÚ" << m_count << "¸öÎö¹¹º¯Êý±»µ÷ÓÃ" << std::endl;
+    std::cout << "ç¬¬" << m_count << "ä¸ªæžæž„å‡½æ•°è¢«è°ƒç”¨" << std::endl;
   }
   int test = 2;
 };

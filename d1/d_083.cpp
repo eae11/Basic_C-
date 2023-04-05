@@ -1,5 +1,5 @@
 #include <iostream>
-#define X //代码中的X会被删除
+#define X
 #define _in_
 #define _out_
 #define SUM(X, Y) X+Y*3
@@ -8,7 +8,7 @@
 #define SHOW2(X, Y) void X##Y(){std::cout<<#X;}
 
 SHOW2(test, 22)
-int ave(_in_ int a, _out_ int& b) {//仅做一个标识
+int ave(_in_ int a, _out_ int& b) {
   return a + b;
 }
 
@@ -22,5 +22,5 @@ int main() {
   a1= nullptr;*/
   RELEASE(a1)
   SHOW(aaa"dadadadadd");
-test22();
+  test22();
 }

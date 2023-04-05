@@ -1,29 +1,29 @@
-// class9.1.cpp : ´ËÎÄ¼ş°üº¬ "main" º¯Êı¡£³ÌĞòÖ´ĞĞ½«ÔÚ´Ë´¦¿ªÊ¼²¢½áÊø¡£
+// class9.1.cpp : æ­¤æ–‡ä»¶åŒ…å« "main" å‡½æ•°ã€‚ç¨‹åºæ‰§è¡Œå°†åœ¨æ­¤å¤„å¼€å§‹å¹¶ç»“æŸã€‚
 //
 
 #include <iostream>
 #include <cmath>
 
 int main() {
-    char inKey{'y'};
-    while (inKey == 'y' || inKey == 'Y') {
-        int num;
-        std::cout << "ÇëÊäÈëÒ»¸öÊı" << std::endl;
-        std::cin >> num;
-        bool flag;
-        flag = (num % 2 != 0);
-        for (int i = 3; (flag) && (i <= sqrt(num)); i += 2) {
-            if (num % i == 0) {
-                flag = false;
-                break;
-            }
-        }
-        if (flag) {
-            std::cout << "ÊÇÖÊÊı";
-        } else {
-            std::cout << "²»ÊÇÖÊÊı";
-        }
-        std::cout << "°´y¼ÌĞøÅĞ¶Ï,ÆäËûÈÎÒâ¼üÍË³ö" << std::endl;
-        std::cin >> inKey;
+  char inKey{'y'};
+  while (inKey == 'y' || inKey == 'Y') {
+    int num;
+    std::cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•°" << std::endl;
+    std::cin >> num;
+    bool flag;
+    flag = (num % 2 != 0);
+    for (int i = 3; (flag) && (i <= sqrt(num)); i += 2) {
+      if (num % i == 0) {
+        flag = false;
+        break;
+      }
     }
+    if (flag) {
+      std::cout << "æ˜¯è´¨æ•°";
+    } else {
+      std::cout << "ä¸æ˜¯è´¨æ•°";
+    }
+    std::cout << "æŒ‰yç»§ç»­åˆ¤æ–­,å…¶ä»–ä»»æ„é”®é€€å‡º" << std::endl;
+    std::cin >> inKey;
+  }
 }

@@ -4,7 +4,6 @@ class Role {
   int lv;
   int hpRecover;
   void init();
- public:
   int damage;
   int hp;
   void Act(Role& role);
@@ -23,7 +22,7 @@ int main() {
   Role user;
   std::cout << sizeof(user) << std::endl;
   P p1, p2;
-  std::cout << sizeof(p1) << std::endl;//¿ÕÀàÒ»¸ö×Ö½Ú
+  std::cout << sizeof(p1) << std::endl;//ç©ºç±»ä¸€ä¸ªå­—èŠ‚
   std::cout << &p1 << std::endl;
   std::cout << &p2 << std::endl;
 

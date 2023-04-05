@@ -1,20 +1,20 @@
-// class7.4.cpp : ´ËÎÄ¼þ°üº¬ "main" º¯Êý¡£³ÌÐòÖ´ÐÐ½«ÔÚ´Ë´¦¿ªÊ¼²¢½áÊø¡£
+// class7.4.cpp : æ­¤æ–‡ä»¶åŒ…å« "main" å‡½æ•°ã€‚ç¨‹åºæ‰§è¡Œå°†åœ¨æ­¤å¤„å¼€å§‹å¹¶ç»“æŸã€‚
 //
 
 #include <iostream>
 
 int main() {
 
-    char a;
-    linput:
-    printf("ÇëÄúÊäÈëÒ»¸ö´óÐ´×ÖÄ¸,ÎÒÃÇ½«¸øÄú×ª»»ÎªÐ¡Ð´\n");
-    std::cin >> a;
-    if (a > 64 && a < 91) {
-        a += 32;
-        std::cout << a;
-        goto linput;
-    } else {
-        printf("ÄúÊäÈëµÄÄÚÈÝ²»·ûºÏÎÒÃÇµÄÒªÇó,ÇëÖØÐÂÊäÈë!\n");
-        goto linput;
-    }
+  char a;
+  linput:
+  printf("è¯·æ‚¨è¾“å…¥ä¸€ä¸ªå¤§å†™å­—æ¯,æˆ‘ä»¬å°†ç»™æ‚¨è½¬æ¢ä¸ºå°å†™\n");
+  std::cin >> a;
+  if (a > 64 && a < 91) {
+    a += 32;
+    std::cout << a;
+    goto linput;
+  } else {
+    printf("æ‚¨è¾“å…¥çš„å†…å®¹ä¸ç¬¦åˆæˆ‘ä»¬çš„è¦æ±‚,è¯·é‡æ–°è¾“å…¥!\n");
+    goto linput;
+  }
 }

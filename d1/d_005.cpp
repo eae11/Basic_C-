@@ -1,7 +1,7 @@
 #include <iostream>
 
 /*
-ÀàĞÍ×ª»»´Ó¸ßµ½µÍ
+ç±»å‹è½¬æ¢ä»é«˜åˆ°ä½
 long double
 double
 float
@@ -15,19 +15,19 @@ int
 
 
 int main() {
-    float d=50.0f;
-    int a{500};
-    unsigned int b{1000};
+  float d=50.0f;
+  int a{500};
+  unsigned int b{1000};
 
-    std::cout << a - b << std::endl;
+  std::cout << a - b << std::endl;
 
-    std::cout << int(a - b) << std::endl;//×ª³Éint cĞ´·¨
+  std::cout << int(a - b) << std::endl;//è½¬æˆint cå†™æ³•
 
-    std::cout << static_cast<int>(a - b) << std::endl;//c++Ğ´·¨
+  std::cout << static_cast<int>(a - b) << std::endl;//c++å†™æ³•
 
-    long long c{500};
+  long long c{500};
 
-    std::cout << c - b << std::endl;//Ä³Ğ©±àÒëÆ÷unsigned intµÈ¼¶±Èlong´ó
-    int e{static_cast<int>( d)};
-    e = (int) d;
+  std::cout << c - b << std::endl;//æŸäº›ç¼–è¯‘å™¨unsigned intç­‰çº§æ¯”longå¤§
+  int e{static_cast<int>( d)};
+  e = (int) d;
 }

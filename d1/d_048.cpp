@@ -1,33 +1,33 @@
 #include <iostream>
 
 int main() {
-    int *b{};
-    std::unique_ptr<int> b_ptr{new int{5}};
-    std::cout << *b_ptr << std::endl;
-    int *a = new int[5];
+  int *b{};
+  std::unique_ptr<int> b_ptr{new int{5}};
+  std::cout << *b_ptr << std::endl;
+  int *a = new int[5];
 
 //    std::unique_ptr<int[]> intPtr{new int[5]{5,4,3,2,1}};
-    std::unique_ptr<int[]> intPtr{std::make_unique<int[]>(5)};//c++14ĞÂÓï·¨  ÕâÀï5´ú±í¸öÊı
-    std::unique_ptr<int> intPtr2{std::make_unique<int>(5)};//ÕâÀï5´ú±í³õÊ¼Öµ
+  std::unique_ptr<int[]> intPtr{std::make_unique<int[]>(5)};//c++14æ–°è¯­æ³•  è¿™é‡Œ5ä»£è¡¨ä¸ªæ•°
+  std::unique_ptr<int> intPtr2{std::make_unique<int>(5)};//è¿™é‡Œ5ä»£è¡¨åˆå§‹å€¼
 //    std::unique_ptr<int[]> intPtrA{};
-//    intPtrA = intPtr;//ÖÇÄÜÖ¸Õë¾ßÓĞÎ¨Ò»ĞÔ²»ÄÜ´æ·ÅÏàÍ¬µÄÄÚ´æµØÖ·
-    std::cout << intPtr[1] << std::endl;
-    std::cout << intPtr[0] << std::endl;
+//    intPtrA = intPtr;//æ™ºèƒ½æŒ‡é’ˆå…·æœ‰å”¯ä¸€æ€§ä¸èƒ½å­˜æ”¾ç›¸åŒçš„å†…å­˜åœ°å€
+  std::cout << intPtr[1] << std::endl;
+  std::cout << intPtr[0] << std::endl;
 
-//    intPtr.reset();//ÊÍ·ÅÄÚ´æ¿Õ¼ä Ö¸Õë²¢ÇÒÖ¸Ïò0
-    a = intPtr.get();//·µ»ØÖ¸Õë(Ò²¾ÍÊÇËµÏë´ÓÖÇÄÜÖ¸Õë»»µ½ÆÕÍ¨Ö¸Õë)
+//    intPtr.reset();//é‡Šæ”¾å†…å­˜ç©ºé—´ æŒ‡é’ˆå¹¶ä¸”æŒ‡å‘0
+  a = intPtr.get();//è¿”å›æŒ‡é’ˆ(ä¹Ÿå°±æ˜¯è¯´æƒ³ä»æ™ºèƒ½æŒ‡é’ˆæ¢åˆ°æ™®é€šæŒ‡é’ˆ)
 
-    a = intPtr.release();//ÄÚ´æ²»ÊÍ·ÅÖ»ÊÇ°ÑÖ¸ÕëÖ¸Ïò0
-    std::cout << intPtr << std::endl;
-    std::cout << a << std::endl;
+  a = intPtr.release();//å†…å­˜ä¸é‡Šæ”¾åªæ˜¯æŠŠæŒ‡é’ˆæŒ‡å‘0
+  std::cout << intPtr << std::endl;
+  std::cout << a << std::endl;
 
-    //ÖÇÄÜÖ¸ÕëÒòÎª¾ß±¸Î¨Ò»ĞÔ,Òò´Ë²»ÄÜ±»¸´ÖÆ,µ«ÊÇ¿ÉÒÔ×ªÒÆ
-    std::unique_ptr<int> ptr1{new int{}};
-    std::unique_ptr<int> ptr2{};
-    std::cout << ptr1 << std::endl;
-    std::cout << ptr2 << std::endl;
-    ptr2 = std::move(ptr1);//ptr1Ö¸Ïò0,ptr2Ö¸ÏòÔ­À´ptr1Ö¸ÏòµÄµØ·½
-    std::cout << ptr1 << std::endl;
-    std::cout << ptr2 << std::endl;
+  //æ™ºèƒ½æŒ‡é’ˆå› ä¸ºå…·å¤‡å”¯ä¸€æ€§,å› æ­¤ä¸èƒ½è¢«å¤åˆ¶,ä½†æ˜¯å¯ä»¥è½¬ç§»
+  std::unique_ptr<int> ptr1{new int{}};
+  std::unique_ptr<int> ptr2{};
+  std::cout << ptr1 << std::endl;
+  std::cout << ptr2 << std::endl;
+  ptr2 = std::move(ptr1);//ptr1æŒ‡å‘0,ptr2æŒ‡å‘åŸæ¥ptr1æŒ‡å‘çš„åœ°æ–¹
+  std::cout << ptr1 << std::endl;
+  std::cout << ptr2 << std::endl;
 
 }

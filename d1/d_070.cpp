@@ -2,33 +2,33 @@
 
 template<typename type1>
 type1 ave(type1 a,type1 b) {
-    type1 x = a * b;
-    return (a + b + x) / 2;
+  type1 x = a * b;
+  return (a + b + x) / 2;
 }
 
 template<typename type1>
 type1 bigger(type1 a,type1 b) {
-    a = b;
-    return a > b ? a : b;
+  a = b;
+  return a > b ? a : b;
 }
 
 int main() {
-    std::cout << ave(12.f,2.0f) << std::endl;
-    std::cout << ave<int>(12.f,2.0f) << std::endl;//¿ÉÒÔÏÔÊ½µÄÎªº¯ÊýÄ£°åÖ¸¶¨Ò»¸öÀàÐÍ
-    std::cout << ave(11,12) << std::endl;
-    std::cout << ave((char) 11,(char) 12) << std::endl;
+  std::cout << ave(12.f,2.0f) << std::endl;
+  std::cout << ave<int>(12.f,2.0f) << std::endl;//å¯ä»¥æ˜¾å¼çš„ä¸ºå‡½æ•°æ¨¡æ¿æŒ‡å®šä¸€ä¸ªç±»åž‹
+  std::cout << ave(11,12) << std::endl;
+  std::cout << ave((char) 11,(char) 12) << std::endl;
 
-    int a{100},b{100},c{100};
+  int a{100},b{100},c{100};
 
-    c = *bigger(&a,&b);//´«½øÈ¥²ÎÊýºó½á¹û±ä³ÉÁËµØÖ·ÇóÆ½¾ùÖµ
+  c = *bigger(&a,&b);//ä¼ è¿›åŽ»å‚æ•°åŽç»“æžœå˜æˆäº†åœ°å€æ±‚å¹³å‡å€¼
 
-    int a1{100},b1{12200};
-    int c1{100};
+  int a1{100},b1{12200};
+  int c1{100};
 
-    int &la{a1};
-    int &lb{b1};
+  int &la{a1};
+  int &lb{b1};
 //    c=*bigger(&a1,&b1);
-    c = bigger(la,lb);
-    std::cout << la << std::endl;
-    std::cout << lb << std::endl;
+  c = bigger(la,lb);
+  std::cout << la << std::endl;
+  std::cout << lb << std::endl;
 }

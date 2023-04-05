@@ -1,3 +1,4 @@
+#include <cstring>
 #include <iostream>
 class hstring {
  private:
@@ -38,7 +39,7 @@ class hstring {
   }
 };
 int main() {
-  hstring str("ÄãºÃ!µØÇòÈË");
+  hstring str("ä½ å¥½!åœ°çƒäºº");
   hstring strA(str);
   str.SetStr("4646151561");
   std::cout << str.Show() << std::endl;

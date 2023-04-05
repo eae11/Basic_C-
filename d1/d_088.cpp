@@ -1,6 +1,3 @@
-// class22.1.cpp : ´ËÎÄ¼ş°üº¬ "main" º¯Êı¡£³ÌĞòÖ´ĞĞ½«ÔÚ´Ë´¦¿ªÊ¼²¢½áÊø¡£
-//
-
 #include <iostream>
 
 struct NPC {
@@ -21,7 +18,7 @@ struct ROLE {
   int mp;
   int damage;
   int diamond;
-  bool Act(NPC* beacter) {//C++Àï¿ÉÒÔĞ´º¯Êı,CÀï²»ĞĞ
+  bool Act(NPC* beacter) {//C++é‡Œå¯ä»¥å†™å‡½æ•°,Cé‡Œä¸è¡Œ
     beacter->hp -= damage;
     return beacter->hp > 0;
   }

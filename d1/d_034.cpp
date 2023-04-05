@@ -1,18 +1,18 @@
 #include <iostream>
 
 int main() {
-    int a[]{1,2,3,4,5,6,7};
-    std::cout << sizeof(a) / sizeof(a[1]) << std::endl;
-    int studentId[100]{};
-    int indexId{};
-    while (indexId < 100) {
-        std::cout << "ÊäÈëÑ§ºÅ(ÊäÈë0²é¿´ÒÑµÇ¼ÇµÄÑ§ÉúÐÅÏ¢)";
-        std::cin >> studentId[indexId];
-        if (studentId[indexId] == 0) {
-            system("cls");
-            for (int i = 0; i < indexId; i++) {
-                std::cout << i << "ºÅ Ñ§ÉúÑ§ºÅ" << studentId[i] << std::endl;
-            }
-        } else indexId++;
-    }
+  int a[]{1,2,3,4,5,6,7};
+  std::cout << sizeof(a) / sizeof(a[1]) << std::endl;
+  int studentId[100]{};
+  int indexId{};
+  while (indexId < 100) {
+    std::cout << "è¾“å…¥å­¦å·(è¾“å…¥0æŸ¥çœ‹å·²ç™»è®°çš„å­¦ç”Ÿä¿¡æ¯)";
+    std::cin >> studentId[indexId];
+    if (studentId[indexId] == 0) {
+      system("cls");
+      for (int i = 0; i < indexId; i++) {
+        std::cout << i << "å· å­¦ç”Ÿå­¦å·" << studentId[i] << std::endl;
+      }
+    } else indexId++;
+  }
 }

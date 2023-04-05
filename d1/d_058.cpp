@@ -58,6 +58,6 @@ int main() {
   }
   for (int i = 0; i < count; ++i) {
 
-    std::cout << std::left << "Õ½Á¦  " << std::setw(8) << pRole[i].Exp << "Íæ¼Ò   " << pRole[i].Id << std::endl;
+    std::cout << std::left << "æˆ˜åŠ›  " << std::setw(8) << pRole[i].Exp << "çŽ©å®¶   " << pRole[i].Id << std::endl;
   }
 }

@@ -2,17 +2,17 @@
 
 int main() {
 
-    int year{2018};
-    int month{2018};
-    int day{2018};
+  int year{2018};
+  int month{2018};
+  int day{2018};
 //    int age{7.5};
-    int age = 7.5;
-    std::cout << "½ñÌìÊÇ" << year << "Äê" << month << "ÔÂ" << day << "ÈÕ" << std::endl;
-    printf("%d\n", age);
-    unsigned short salary;
-    std::cout << "ÇëÊäÈëÄãµÄ¹¤×Ê" << std::endl;
-    std::cin >> salary;
+  int age = 7.5;
+  std::cout << "ä»Šå¤©æ˜¯" << year << "å¹´" << month << "æœˆ" << day << "æ—¥" << std::endl;
+  printf("%d\n", age);
+  unsigned short salary;
+  std::cout << "è¯·è¾“å…¥ä½ çš„å·¥èµ„" << std::endl;
+  std::cin >> salary;
 
-    std::cout << salary << std::endl;
+  std::cout << salary << std::endl;
 
 }

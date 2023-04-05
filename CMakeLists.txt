@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.21)
 project(Basic_C__)
 
 set(CMAKE_CXX_STANDARD 17)
-include_directories("G:\\Clib")#Ö¸¶¨Í·ÎÄ¼şÄ¿Â¼
-link_directories(G:\\Clib)#Ö¸¶¨¿âÎÄ¼şÄ¿Â¼
-link_libraries(code_001)#¿âÎÄ¼şÃû³Æ
+#include_directories("G:\\Clib")#æŒ‡å®šå¤´æ–‡ä»¶ç›®å½•
+#link_directories(G:\\Clib)#æŒ‡å®šåº“æ–‡ä»¶ç›®å½•
+#link_libraries(code_001)#åº“æ–‡ä»¶åç§°
 add_executable(d1 d1/d_001.cpp d1/d_077_1.h)
 add_executable(d2 d1/d_002.cpp)
 add_executable(d3 d1/d_003.cpp)
@@ -87,7 +87,7 @@ add_executable(d_079 d1/d_079.cpp)
 add_executable(d_080 d1/d_080.cpp)
 add_executable(d_081 d1/d_081.cpp)
 add_executable(d_082 d1/d_082.cpp d1/d_082_link_01.cpp d1/d_082_1.h)
-add_executable(d_083 d1/d_083.cpp )
+add_executable(d_083 d1/d_083.cpp)
 add_executable(d_084 d1/d_084.cpp d1/d_084_1.h)
 add_executable(d_085 d1/d_085.cpp d1/d_085_1.h d1/d_085_link_01.cpp)
 add_executable(d_086 d1/d_086.cpp)

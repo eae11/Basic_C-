@@ -1,45 +1,45 @@
 #include <iostream>
 
 int main() {
-    unsigned x;
-    std::cout << "ÇëÊäÈëÒª·ÖÅäµÄÄÚ´æ´óĞ¡:";
-    std::cin >> x;
-    int *p{},*pm{},*pold;
+  unsigned x;
+  std::cout << "è¯·è¾“å…¥è¦åˆ†é…çš„å†…å­˜å¤§å°:";
+  std::cin >> x;
+  int *p{},*pm{},*pold;
 
-//    p=new int;//·ÖÅäÒ»¸öint  CÓïÑÔfreeÊÍ·Å C++ delete p;
-    p = new int[x];//·ÖÅäx¸öint  C++ delete[] p;
-    *p = 500;
-    p[0] = 500;
+//    p=new int;//åˆ†é…ä¸€ä¸ªint  Cè¯­è¨€freeé‡Šæ”¾ C++ delete p;
+  p = new int[x];//åˆ†é…xä¸ªint  C++ delete[] p;
+  *p = 500;
+  p[0] = 500;
 
-    pm = (int *) malloc(x * sizeof(int));//void*
+  pm = (int *) malloc(x * sizeof(int));//void*
 
-    //p = (int*)calloc(x, sizeof(int));
-    pold = p;
+  //p = (int*)calloc(x, sizeof(int));
+  pold = p;
 
 
-    std::cout << pm[0] << std::endl;
-    std::cout << p[0] << std::endl;
+  std::cout << pm[0] << std::endl;
+  std::cout << p[0] << std::endl;
 
-    if (p == nullptr) {
-        std::cout << "ÄÚ´æ·ÖÅäÊ§°Ü!";
-    } else {
-        p[0] = 952;
-        p[1] = 253;
-        p[2] = p[0] * p[1];
-        std::cout << p[0] << " " << p[1] << " " << p[2];
-    }
-
-    std::cout << "ÇëÊäÈëÒªÖØĞÂ·ÖÅäµÄÄÚ´æ´óĞ¡:";
-    std::cin >> x;
-    p = (int *) realloc(p,x);
-    std::cout << p << "========" << pold << std::endl;
+  if (p == nullptr) {
+    std::cout << "å†…å­˜åˆ†é…å¤±è´¥!";
+  } else {
+    p[0] = 952;
+    p[1] = 253;
+    p[2] = p[0] * p[1];
     std::cout << p[0] << " " << p[1] << " " << p[2];
+  }
 
-    delete[] p;
+  std::cout << "è¯·è¾“å…¥è¦é‡æ–°åˆ†é…çš„å†…å­˜å¤§å°:";
+  std::cin >> x;
+  p = (int *) realloc(p,x);
+  std::cout << p << "========" << pold << std::endl;
+  std::cout << p[0] << " " << p[1] << " " << p[2];
 
-    free(pm);
-    pm = 0;
-    std::cout << p << "========" << pm << std::endl;
+  delete[] p;
+
+  free(pm);
+  pm = 0;
+  std::cout << p << "========" << pm << std::endl;
 
 
 }

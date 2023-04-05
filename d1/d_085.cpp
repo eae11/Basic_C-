@@ -8,11 +8,11 @@ int a = 66;
 namespace t {
 int height{100};
 }
-/*ËùÓÐ¾ßÓÐÁ´½ÓÊôÐÔµÄ¶ÔÏó,Ö»ÒªÃ»ÓÐ¶¨ÒåÃüÃû¿Õ¼ä,¾ÍÄ¬ÈÏ¶¨ÒåÔÚÈ«¾ÖÃüÃû¿Õ¼äÖÐ,
- * È«¾ÖÃüÃû¿Õ¼äÖÐ³ÉÔ±µÄ·ÃÎÊ²»ÓÃÏÔÊ¾µÄÖ¸¶¨,µ±¾Ö²¿Ãû³Æ¸²¸ÇÁËÈ«¾ÖÃû³ÆÊ±²ÅÐèÒªÏÔÊ½µÄÖ¸¶¨È«¾ÖÃüÃû¿Õ¼ä;*/
+/*æ‰€æœ‰å…·æœ‰é“¾æŽ¥å±žæ€§çš„å¯¹è±¡,åªè¦æ²¡æœ‰å®šä¹‰å‘½åç©ºé—´,å°±é»˜è®¤å®šä¹‰åœ¨å…¨å±€å‘½åç©ºé—´ä¸­,
+ * å…¨å±€å‘½åç©ºé—´ä¸­æˆå‘˜çš„è®¿é—®ä¸ç”¨æ˜¾ç¤ºçš„æŒ‡å®š,å½“å±€éƒ¨åç§°è¦†ç›–äº†å…¨å±€åç§°æ—¶æ‰éœ€è¦æ˜¾å¼çš„æŒ‡å®šå…¨å±€å‘½åç©ºé—´;*/
 
 namespace hkd {
-int b = 25;//¶¨Òå
+int b = 25;//å®šä¹‰
 void test() {
   std::cout << b << std::endl;
 }
@@ -22,15 +22,15 @@ void f1() {
 }
 }
 }
-namespace h1 = hkd::hack;//ÃüÃû¿Õ¼äÈ¡±ðÃû
-/*int hkd::b{250};//¶¨Òå
+namespace h1 = hkd::hack;//å‘½åç©ºé—´å–åˆ«å
+/*int hkd::b{250};//å®šä¹‰
 void hkd::test() {
   std::cout << hkd::b << std::endl;
 };
 void hkd::hack::f1() {
   std::cout << "f1" << std::endl;
 }*/
-/*static void Thack(){ //ÏÖÔÚ²»ÍÆ¼öÓÃstaticÁËÓÃÎ´ÃüÃûµÄnamespace
+/*static void Thack(){ //çŽ°åœ¨ä¸æŽ¨èç”¨staticäº†ç”¨æœªå‘½åçš„namespace
   std::cout << "thack" << std::endl;
 }*/
 

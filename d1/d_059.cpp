@@ -1,47 +1,47 @@
 #include <iostream>
 
-/*Çø±ðÖ¸Õë¿ÉÒÔ´«Èë¿ÕÖ¸Õë,¶øÒýÓÃ²»¿ÉÒÔ*/
+/*åŒºåˆ«æŒ‡é’ˆå¯ä»¥ä¼ å…¥ç©ºæŒ‡é’ˆ,è€Œå¼•ç”¨ä¸å¯ä»¥*/
 typedef struct Role {
-    char Name[0x20];
-    int hp;
-    int mp;
-    int damage;
+  char Name[0x20];
+  int hp;
+  int mp;
+  int damage;
 } *PROLE;
 
 bool Act(const Role *Acter,Role *beAct) {
 
-    beAct->hp -= Acter->damage;
-    bool bEnd = beAct->hp < 0;
+  beAct->hp -= Acter->damage;
+  bool bEnd = beAct->hp < 0;
 
-    return bEnd;
+  return bEnd;
 }
 
 bool Act2(const Role &Acter,Role &beAct) {//Role & Acter=user;Role & beAct=monster
 
-    beAct.hp -= Acter.damage;
-    bool bEnd = beAct.hp < 0;
+  beAct.hp -= Acter.damage;
+  bool bEnd = beAct.hp < 0;
 
-    return bEnd;
+  return bEnd;
 }
 
-bool Act3(const Role &Acter,Role *&beAct) {//Role * &beAct ¼ÓÁË¸öÒýÓÃ´ú±í´ËÊ±beActÖ¸Õë¾ÍÊÇproleÖ¸Õë¸Ä±äÁËbeActµÄÖ¸ÕëÄÇÃ´proleÖ¸ÏòÒ²¸Ä±äÁË,È¥µôÕâ¸öÒýÓÃ,ÔòÖ»ÊÇÐÎ²ÎÀïµÄÖ¸Ïò¸Ä±ä,prole²¢²»»á¸Ä±ä
-    beAct->hp -= Acter.damage;
-    bool bEnd = beAct->hp < 0;
-    beAct = (Role *) &Acter;
-    return bEnd;
+bool Act3(const Role &Acter,Role *&beAct) {//Role * &beAct åŠ äº†ä¸ªå¼•ç”¨ä»£è¡¨æ­¤æ—¶beActæŒ‡é’ˆå°±æ˜¯proleæŒ‡é’ˆæ”¹å˜äº†beActçš„æŒ‡é’ˆé‚£ä¹ˆproleæŒ‡å‘ä¹Ÿæ”¹å˜äº†,åŽ»æŽ‰è¿™ä¸ªå¼•ç”¨,åˆ™åªæ˜¯å½¢å‚é‡Œçš„æŒ‡å‘æ”¹å˜,proleå¹¶ä¸ä¼šæ”¹å˜
+  beAct->hp -= Acter.damage;
+  bool bEnd = beAct->hp < 0;
+  beAct = (Role *) &Acter;
+  return bEnd;
 }
 
 
 int main() {
-    Role user{"°ÂÌØÂü",200,300,850};
-    Role monster{"Ð¡¹ÖÊÞ",800,300,50};
+  Role user{"å¥¥ç‰¹æ›¼",200,300,850};
+  Role monster{"å°æ€ªå…½",800,300,50};
 
-    PROLE prole = &monster;
-//    if (Act(&user,&monster)) std::cout << monster.Name << " ¹ÖÎïËÀÍö, »ñÈ¡¾­ÑéÖµ:XXXX";
-//    if (Act2(user,monster)) std::cout << monster.Name << " ¹ÖÎïËÀÍö, »ñÈ¡¾­ÑéÖµ:XXXX";
+  PROLE prole = &monster;
+//    if (Act(&user,&monster)) std::cout << monster.Name << " æ€ªç‰©æ­»äº¡, èŽ·å–ç»éªŒå€¼:XXXX";
+//    if (Act2(user,monster)) std::cout << monster.Name << " æ€ªç‰©æ­»äº¡, èŽ·å–ç»éªŒå€¼:XXXX";
 
 
-    if (Act3(user,prole)) std::cout << prole->Name << " ¹ÖÎïËÀÍö, »ñÈ¡¾­ÑéÖµ:XXXX";
+  if (Act3(user,prole)) std::cout << prole->Name << " æ€ªç‰©æ­»äº¡, èŽ·å–ç»éªŒå€¼:XXXX";
 }
 
 

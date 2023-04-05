@@ -15,5 +15,5 @@ class Role {
   }
 };
 int main() {
-  int* a = new int[100];
+  std::cout << "啊啊啊" << std::endl;
 }

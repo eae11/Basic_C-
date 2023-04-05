@@ -1,10 +1,10 @@
 #include <iostream>
 
-/*Ã¶¾Ù*/
+/*æšä¸¾*/
 int main() {
-  /*Ã¶¾ÙÀàĞÍÄ¬ÈÏint Ö»ÄÜÊÇÕûÊı*/
+  /*æšä¸¾ç±»å‹é»˜è®¤int åªèƒ½æ˜¯æ•´æ•°*/
   enum class EquipLv : int {
-    normal = 1, armyA = normal,//Í¬Ò»¼¶
+    normal = 1, armyA = normal,//åŒä¸€çº§
     high, armyB = high,
     rare, armyC = rare,
     epic, armyD = epic,
@@ -22,7 +22,7 @@ int main() {
   EquipLv w8 = EquipLv::armyB;
 
   short diff = (int) w6 - (int) w1;
-  std::cout << "×°±¸µÈ¼¶²îÎª" << diff << std::endl;
+  std::cout << "è£…å¤‡ç­‰çº§å·®ä¸º" << diff << std::endl;
   std::cout << (int) w7 << std::endl;
 
 }

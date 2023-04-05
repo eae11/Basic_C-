@@ -3,7 +3,7 @@
 int ave();
 int pve();
 //extern "C" int ave();
-//ºÏÆğÀ´Ğ´
+//åˆèµ·æ¥å†™
 /*extern "C"{
 int ave();
 int pve();

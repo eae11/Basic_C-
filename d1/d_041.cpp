@@ -1,25 +1,25 @@
-// class11.3.cpp : ´ËÎÄ¼ş°üº¬ "main" º¯Êı¡£³ÌĞòÖ´ĞĞ½«ÔÚ´Ë´¦¿ªÊ¼²¢½áÊø¡£
+// class11.3.cpp : æ­¤æ–‡ä»¶åŒ…å« "main" å‡½æ•°ã€‚ç¨‹åºæ‰§è¡Œå°†åœ¨æ­¤å¤„å¼€å§‹å¹¶ç»“æŸã€‚
 //
 
 #include <iostream>
 
 int main() {
 
-    unsigned ua{999901};
+  unsigned ua{999901};
 
-    int *ptr{};
-    long long *uptr{(long long *) &ua};
+  int *ptr{};
+  long long *uptr{(long long *) &ua};
 //    *uptr = 0;
-    ptr = (int *) &ua; //unsigned
+  ptr = (int *) &ua; //unsigned
 
 
-    char *ctr{};
+  char *ctr{};
 
-    *ptr = -1; //0xFF FF FF FF
+  *ptr = -1; //0xFF FF FF FF
 
-    ctr = (char *) ptr; //
+  ctr = (char *) ptr; //
 
-    *ctr = 'A'; //41 FF FF FF // 0xFFFFFF41
+  *ctr = 'A'; //41 FF FF FF // 0xFFFFFF41
 
 //    *(ctr+4)=0;
 //    *(ctr+5)=0;
@@ -27,15 +27,15 @@ int main() {
 //    *(ctr+7)=0;
 
 
-    //00 00 00 00 Î´Öª  (&ua)+4
-    //FF FF FF FF ua    &ua
+  //00 00 00 00 æœªçŸ¥  (&ua)+4
+  //FF FF FF FF ua    &ua
 
 
-    std::cout << ptr << std::endl;
-    std::cout << ua << std::endl;
-    std::cout << ctr << std::endl;
-    std::cout << *ctr << std::endl;
-    std::cout << *ptr << std::endl;
-    std::cout << *uptr << std::endl;
+  std::cout << ptr << std::endl;
+  std::cout << ua << std::endl;
+  std::cout << ctr << std::endl;
+  std::cout << *ctr << std::endl;
+  std::cout << *ptr << std::endl;
+  std::cout << *uptr << std::endl;
 }
 

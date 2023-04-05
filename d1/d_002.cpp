@@ -2,19 +2,19 @@
 
 int main() {
 //    system("color 84");
-    std::cout << "=======================================" << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << "                    Áê½­ºþ\"¿ØÖÆÌ¨\"°æ v1.0"<<std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
-    std::cout << "                    Áê½­ºþ\"¿ØÖÆÌ¨\"°æ v1.0"<<std::endl;
-    std::cout << "                    Áê½­ºþ\"¿ØÖÆÌ¨\"°æ v1.0"<<std::endl;
+  std::cout << "=======================================" << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << "                    é™µæ±Ÿæ¹–\"æŽ§åˆ¶å°\"ç‰ˆ v1.0"<<std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << std::endl;
+  std::cout << "                    é™µæ±Ÿæ¹–\"æŽ§åˆ¶å°\"ç‰ˆ v1.0"<<std::endl;
+  std::cout << "                    é™µæ±Ÿæ¹–\"æŽ§åˆ¶å°\"ç‰ˆ v1.0"<<std::endl;
 
 }

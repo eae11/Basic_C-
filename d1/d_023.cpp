@@ -6,25 +6,25 @@ int main() {
   } else {
     int b = 0;
   }
-  if (int a = 0;1) { //C++17ĞÂÓï·¨
+  if (int a = 0;1) { //C++17æ–°è¯­æ³•
 
   } else {
     std::cout << a << std::endl;
   }
   int c = 5;
   switch (c) {
-//        int d=6;//´íÎó
+//        int d=6;//é”™è¯¯
     case 1:
-//            int p = 6;//´íÎó
+//            int p = 6;//é”™è¯¯
       break;
     case2 :
     {
-      int a = 6; //ÕıÈ·
+      int a = 6; //æ­£ç¡®
     };
       break;
     default :break;
   }
-  switch (int a = 6;c) {//c++17ĞÂÌØĞÔ
+  switch (int a = 6;c) {//c++17æ–°ç‰¹æ€§
     case 1:std::cout << a << std::endl;
       break;
     case 2 :std::cout << a << std::endl;

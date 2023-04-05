@@ -1,6 +1,6 @@
 #include <iostream>
-/*º¯ÊıÄ£°åµÄ±¾ÖÊÊÇ
- * ±àÒëÆ÷»á¸ù¾İ²»Í¬µÄ²ÎÊıÉú³É¼¸Ì×²»Í¬µÄº¯Êı*/
+/*å‡½æ•°æ¨¡æ¿çš„æœ¬è´¨æ˜¯
+ * ç¼–è¯‘å™¨ä¼šæ ¹æ®ä¸åŒçš„å‚æ•°ç”Ÿæˆå‡ å¥—ä¸åŒçš„å‡½æ•°*/
 template<typename T1, typename T2, typename TR=T1>
 TR ave(T1 a, T2 b) {
   return (a + b) / 2;
@@ -9,14 +9,14 @@ TR ave(T1 a, T2 b) {
 template<int max, int min, typename T>
 bool changeHp(T& hp, T damage) {
   hp -= damage;
-  if (hp > max) {//max ºÍminÔÚÕâÀï¶¼ÊÇ³£Á¿
+  if (hp > max) {//max å’Œminåœ¨è¿™é‡Œéƒ½æ˜¯å¸¸é‡
     hp = max;
   }
   return hp < min;
 }
 
 template<typename T, short count>
-//count×Ô¶¯±»ÌîÎªÊı×éµÄ¸öÊı
+//countè‡ªåŠ¨è¢«å¡«ä¸ºæ•°ç»„çš„ä¸ªæ•°
 T ave3(T (& arr)[count]) {
   T all{};
   for (const auto& item : arr) {

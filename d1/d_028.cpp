@@ -1,23 +1,23 @@
 #include <iostream>
 
-/*ÕÒÖÊÊý*/
+/*æ‰¾è´¨æ•°*/
 int main() {
-    int i;
-    /*
-     * Èç¹ûÒ»¸öÊý²»ÊÇËØÊýÊÇºÏÊý£¬ ÄÇÃ´Ò»¶¨¿ÉÒÔÓÉÁ½¸ö×ÔÈ»ÊýÏà³ËµÃµ½£¬ ÆäÖÐÒ»¸ö´óÓÚ»òµÈÓÚËüµÄÆ½·½¸ù£¬Ò»¸öÐ¡ÓÚ»òµÈÓÚËüµÄÆ½·½¸ù¡£²¢ÇÒ³É¶Ô³öÏÖ¡£
-     *
-     */
-    for (i = 3; i < 1000; i += 2) {
-        bool flag= true;
-        for (int j = 3; j <= sqrt(i); j += 2) {
-            if (i % j == 0) {
-                flag= false;
-                break;
-            }
-        }
-        if (flag) {
-            std::cout << i << std::endl;
-        }
+  int i;
+  /*
+   * å¦‚æžœä¸€ä¸ªæ•°ä¸æ˜¯ç´ æ•°æ˜¯åˆæ•°ï¼Œ é‚£ä¹ˆä¸€å®šå¯ä»¥ç”±ä¸¤ä¸ªè‡ªç„¶æ•°ç›¸ä¹˜å¾—åˆ°ï¼Œ å…¶ä¸­ä¸€ä¸ªå¤§äºŽæˆ–ç­‰äºŽå®ƒçš„å¹³æ–¹æ ¹ï¼Œä¸€ä¸ªå°äºŽæˆ–ç­‰äºŽå®ƒçš„å¹³æ–¹æ ¹ã€‚å¹¶ä¸”æˆå¯¹å‡ºçŽ°ã€‚
+   *
+   */
+  for (i = 3; i < 1000; i += 2) {
+    bool flag= true;
+    for (int j = 3; j <= sqrt(i); j += 2) {
+      if (i % j == 0) {
+        flag= false;
+        break;
+      }
     }
+    if (flag) {
+      std::cout << i << std::endl;
+    }
+  }
 
 }

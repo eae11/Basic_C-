@@ -8,25 +8,25 @@ int main() {
   char strB[0x10] = "456";
   char strC[0x20];
   memcpy(strC,str,strlen(str));
-  memcpy(strC + strlen(str),strB,strlen(strB)+1);//'0'Ò²¿½±´¹ıÀ´
+  memcpy(strC + strlen(str),strB,strlen(strB)+1);//'0'ä¹Ÿæ‹·è´è¿‡æ¥
   std::cout << strC << std::endl;*/
 
-//    string str{"³ÔÆÏÌÑ²»ÍÂÆÏÌÑÆ¤"};
+//    string str{"åƒè‘¡è„ä¸åè‘¡è„çš®"};
 //    std::cin >> str;
 //    std::cout << str;
 
-  //string ±äÁ¿Ãû³Æ{¡°×Ö·û´®¡±,Òª½ØÈ¡µÄ³¤¶È}
-  string str1{"ÄãdadadwºÅ", 3};//×¢ÒâÖĞÎÄ ½ØÈ¡Èı¸ö×Ö½Ú
+  //string å˜é‡åç§°{â€œå­—ç¬¦ä¸²â€,è¦æˆªå–çš„é•¿åº¦}
+  string str1{"ä½ dadadwå·", 3};//æ³¨æ„ä¸­æ–‡ æˆªå–ä¸‰ä¸ªå­—èŠ‚
   std::cout << str1 << std::endl;
-  //string±äÁ¿Ãû³Æ{¡°×Ö·û´®¡±,ÆğÊ¼Î»ÖÃ,Òª½ØÈ¡µÄ³¤¶È}
-  string str2{"0123456", 2, 3};//´Ó2¿ªÊ¼½Ø3Î»
+  //stringå˜é‡åç§°{â€œå­—ç¬¦ä¸²â€,èµ·å§‹ä½ç½®,è¦æˆªå–çš„é•¿åº¦}
+  string str2{"0123456", 2, 3};//ä»2å¼€å§‹æˆª3ä½
   std::cout << str2 << std::endl;
 
   /*string str3;
   std::cin >> str3;
   string str4{str3,0,6};
   std::cout << str4 << std::endl;*/
-  //:string±äÁ¿Ãû³Æ(Òª¸´ÖÆµÄ¸öÊı, "×Ö·û')
+  //:stringå˜é‡åç§°(è¦å¤åˆ¶çš„ä¸ªæ•°, "å­—ç¬¦')
   string str5(6, 'a');
   std::cout << str5 << std::endl;
 
@@ -39,7 +39,7 @@ int main() {
   int age;
   std::cin >> age;
   string str8, ls;
-  ls = "ÓÃ»§µÄÄêÁäÎª";
+  ls = "ç”¨æˆ·çš„å¹´é¾„ä¸º";
   str8 = ls + std::to_string(age);
   std::cout << str8 << std::endl;
 }

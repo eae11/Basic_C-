@@ -2,35 +2,35 @@
 
 int main()
 {
-    unsigned int sId, sPr;
-    std::cout << "Í¬Ñ§,ÇëÊäÈëÄúµÄÑ§ºÅ:";
-    std::cin >> sId;
+  unsigned int sId, sPr;
+  std::cout << "åŒå­¦,è¯·è¾“å…¥æ‚¨çš„å­¦å·:";
+  std::cin >> sId;
 
-    switch (sId)
-    {
+  switch (sId)
+  {
 
-        case 15692:
-            sPr = 500;
-            break;
-        case 65421:
-            sPr = 450;
-            break;
-        case 98741:
-            sPr = 250;
-            break;
-        case 2531:
-            sPr = 150;
-            break;
-        case 666:
-            [[fallthrough]];//C++17ÐÂÌØÐÔ Ïàµ±ÓÚÊ²Ã´¶¼²»Ð´
-        case 321:
-            sPr = sId * 2; //sPr=sId<<1;
-            break;
-        default:
-            sPr = 0;
-            std::cout << "¶Ô²»Æð,Í¬Ñ§,Äú±¾´Î»î¶¯²¢Î´ÖÐ½±,ÇëÏÂ´ÎÔÙÀ´°É!\n";
-            break;
-    }
+    case 15692:
+      sPr = 500;
+      break;
+    case 65421:
+      sPr = 450;
+      break;
+    case 98741:
+      sPr = 250;
+      break;
+    case 2531:
+      sPr = 150;
+      break;
+    case 666:
+      [[fallthrough]];//C++17æ–°ç‰¹æ€§ ç›¸å½“äºŽä»€ä¹ˆéƒ½ä¸å†™
+    case 321:
+      sPr = sId * 2; //sPr=sId<<1;
+      break;
+    default:
+      sPr = 0;
+      std::cout << "å¯¹ä¸èµ·,åŒå­¦,æ‚¨æœ¬æ¬¡æ´»åŠ¨å¹¶æœªä¸­å¥–,è¯·ä¸‹æ¬¡å†æ¥å§!\n";
+      break;
+  }
 
-    if(sPr)std::cout << "Í¬Ñ§,¹§Ï²Äú,Äú»ñµÃÁË½±Ñ§½ð " << sPr << " º«±Ò";
+  if(sPr)std::cout << "åŒå­¦,æ­å–œæ‚¨,æ‚¨èŽ·å¾—äº†å¥–å­¦é‡‘ " << sPr << " éŸ©å¸";
 }

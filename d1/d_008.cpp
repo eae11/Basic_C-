@@ -1,19 +1,19 @@
 
 #include <iostream>
-/*ÀàĞÍÍÆ¶Ï*/
+/*ç±»å‹æ¨æ–­*/
 int main() {
 
 
-    auto a{200};
-    auto b{30LL};
-    auto c{30L};
-    auto d{U'a'};
-    auto e{u'a'};
-    std::cout << "±äÁ¿aµÄÀàĞÍÎª"<<typeid(a).name() << std::endl;//typeid(±äÁ¿).name()²é¿´±äÁ¿µÄÀàĞÍ
-    std::cout << "±äÁ¿bµÄÀàĞÍÎª"<<typeid(b).name() << std::endl;
-    std::cout << "±äÁ¿cµÄÀàĞÍÎª"<<typeid(c).name() << std::endl;
-    std::cout << "±äÁ¿dµÄÀàĞÍÎª"<<typeid(d).name() << std::endl;
-    std::cout << "±äÁ¿eµÄÀàĞÍÎª"<<typeid(e).name() << std::endl;
+  auto a{200};
+  auto b{30LL};
+  auto c{30L};
+  auto d{U'a'};
+  auto e{u'a'};
+  std::cout << "å˜é‡açš„ç±»å‹ä¸º"<<typeid(a).name() << std::endl;//typeid(å˜é‡).name()æŸ¥çœ‹å˜é‡çš„ç±»å‹
+  std::cout << "å˜é‡bçš„ç±»å‹ä¸º"<<typeid(b).name() << std::endl;
+  std::cout << "å˜é‡cçš„ç±»å‹ä¸º"<<typeid(c).name() << std::endl;
+  std::cout << "å˜é‡dçš„ç±»å‹ä¸º"<<typeid(d).name() << std::endl;
+  std::cout << "å˜é‡eçš„ç±»å‹ä¸º"<<typeid(e).name() << std::endl;
 
 
 }

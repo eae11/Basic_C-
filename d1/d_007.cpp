@@ -2,26 +2,26 @@
 #include <locale>
 
 int main() {
-    setlocale(LC_ALL,"chs");
-    char a = 'a';
-    wchar_t b = L'b';//vs2019ÏÂ2¸ö×Ö½Ú  utf_16 Ä³Ğ©±àÒëÆ÷4×Ö½Ú
-    wchar_t p{L'ÎÒ'};
-    char16_t c = u'c';//utf_16   ÎªÁË¿çÆ½Ì¨¹æ¶¨ËÀÁËÕâÁ½¸ö   cout ºÍwcout¶¼Ã»ÊµÏÖÖ§³Ö
-    char32_t d{U'd'};//utf_32   cout ºÍwcout¶¼Ã»ÊµÏÖÖ§³Ö
-//    char8_t c;//utf8   ×îĞÂ±ê×¼  C17ÓÃ²»ÁË
-    std::cout << a << std::endl;
-    std::cout << b << std::endl;//coutÃ»ÓĞÊµÏÖ¶Ô¿í×Ö½Ú±àÂëµÄÖ§³Ö
-    std::wcout << b << std::endl;//wcout
-    std::cout << sizeof(b) << std::endl;
-    std::wcout << p << std::endl;
+  setlocale(LC_ALL,"chs");
+  char a = 'a';
+  wchar_t b = L'b';//vs2019ä¸‹2ä¸ªå­—èŠ‚  utf_16 æŸäº›ç¼–è¯‘å™¨4å­—èŠ‚
+  wchar_t p{L'æˆ‘'};
+  char16_t c = u'c';//utf_16   ä¸ºäº†è·¨å¹³å°è§„å®šæ­»äº†è¿™ä¸¤ä¸ª   cout å’Œwcoutéƒ½æ²¡å®ç°æ”¯æŒ
+  char32_t d{U'd'};//utf_32   cout å’Œwcoutéƒ½æ²¡å®ç°æ”¯æŒ
+//    char8_t c;//utf8   æœ€æ–°æ ‡å‡†  C17ç”¨ä¸äº†
+  std::cout << a << std::endl;
+  std::cout << b << std::endl;//coutæ²¡æœ‰å®ç°å¯¹å®½å­—èŠ‚ç¼–ç çš„æ”¯æŒ
+  std::wcout << b << std::endl;//wcout
+  std::cout << sizeof(b) << std::endl;
+  std::wcout << p << std::endl;
 
-    std::cout << c << std::endl;
-    std::cout << d << std::endl;
+  std::cout << c << std::endl;
+  std::cout << d << std::endl;
 
-    std::cout << "line1" << (char) 10; //\n 10   \r 13  ¿Õ¸ñ32  ' 39 " 34  \92  a 97 A 65   0 48
-    std::cout << "line2"<<std::endl;
+  std::cout << "line1" << (char) 10; //\n 10   \r 13  ç©ºæ ¼32  ' 39 " 34  \92  a 97 A 65   0 48
+  std::cout << "line2"<<std::endl;
 
-    std::cout << "weqe\b\a";//\b ÍË¸ñ \a¾¯±¨Éù
+  std::cout << "weqe\b\a";//\b é€€æ ¼ \aè­¦æŠ¥å£°
 
-    return 0;
+  return 0;
 }

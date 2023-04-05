@@ -2,17 +2,17 @@
 #include <iostream>
 
 int main() {
-    /*setlocale(LC_ALL,"chs");
-    wchar_t wstr[0x5];
+  /*setlocale(LC_ALL,"chs");
+  wchar_t wstr[0x5];
 //    wscanf(L"%s",wstr);
-    wscanf_s(L"%s",wstr,5);//¿É½ÓÊÜµÄ×î´ó×Ö·ûÊı
-    wprintf(L"ÄãµÄÃû×ÖÊÇ%s",wstr);*/
+  wscanf_s(L"%s",wstr,5);//å¯æ¥å—çš„æœ€å¤§å­—ç¬¦æ•°
+  wprintf(L"ä½ çš„åå­—æ˜¯%s",wstr);*/
 
-    /*wchar_t *wstr2 = new wchar_t[0x5];
-    wscanf(L"%s",wstr2);
-    wprintf(L"ÄãµÄÃû×ÖÊÇ%s",wstr2);*/
+  /*wchar_t *wstr2 = new wchar_t[0x5];
+  wscanf(L"%s",wstr2);
+  wprintf(L"ä½ çš„åå­—æ˜¯%s",wstr2);*/
 
-    char name[0x20];
-    std::cout << name << std::endl;
+  char name[0x20];
+  std::cout << name << std::endl;
 
 }

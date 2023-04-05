@@ -3,22 +3,22 @@
 using std::string;
 
 int main() {
-    string str{"id=user;pass=6321123123123123123105;role=ºÂÓ¢¿¡;money=653201;diamond=99990;"};
-    string strIn;
-    string strOut;
-    while (true) {
-        std::cout << "ÇëÊäÈëÄúÒª²éÔÄµÄÊôĞÔ:\n";
-        std::cin >> strIn; //ÒªÊäÈëµÄ×Ö·û´® ÊôĞÔ
-        int lfind = str.find(strIn + "=");
-        if (lfind == -1)
-            std::cout << "¶Ô²»Æğ,ÄúÒª²éÔÄµÄÊôĞÔ²»´æÔÚ!";
-        else {
-            int lend = str.find(";",lfind);
-            strOut = str.substr(lfind+strIn.length() + 1,lend - lfind - strIn.length() - 1);
-            std::cout << strOut;
-        }
-
+  string str{"id=user;pass=6321123123123123123105;role=éƒè‹±ä¿Š;money=653201;diamond=99990;"};
+  string strIn;
+  string strOut;
+  while (true) {
+    std::cout << "è¯·è¾“å…¥æ‚¨è¦æŸ¥é˜…çš„å±æ€§:\n";
+    std::cin >> strIn; //è¦è¾“å…¥çš„å­—ç¬¦ä¸² å±æ€§
+    int lfind = str.find(strIn + "=");
+    if (lfind == -1)
+      std::cout << "å¯¹ä¸èµ·,æ‚¨è¦æŸ¥é˜…çš„å±æ€§ä¸å­˜åœ¨!";
+    else {
+      int lend = str.find(";",lfind);
+      strOut = str.substr(lfind+strIn.length() + 1,lend - lfind - strIn.length() - 1);
+      std::cout << strOut;
     }
+
+  }
 
 
 }

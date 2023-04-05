@@ -5,10 +5,10 @@ void test(Role* p) {
 }
 
 int main() {
-  const Role user{};//const ĞŞÊÎµÄ ¶ÔÏó²»ÄÜĞŞ¸ÄÆä³ÉÔ±±äÁ¿µÄÖµ
+  const Role user{};//const ä¿®é¥°çš„ å¯¹è±¡ä¸èƒ½ä¿®æ”¹å…¶æˆå‘˜å˜é‡çš„å€¼
   Role monster;
   const Role* puser{&monster};
-  puser->GetHp();//const¶ÔÏóÖ»ÄÜµ÷ÓÃconstĞŞÊÎµÄº¯Êı
+  puser->GetHp();//constå¯¹è±¡åªèƒ½è°ƒç”¨constä¿®é¥°çš„å‡½æ•°
 
 //  monster.GetLv() = 200;
 //  std::cout << monster.lv << std::endl;

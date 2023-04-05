@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    printf("helloworld\n");
+  printf("helloworld\n");
 
 //    system("mode con cols=80 lines=40");
 //    system("color 13");
@@ -11,7 +11,6 @@ int main() {
 
 //    system("pause");
 
-    std::cout << "这是一个测试\"很好\"\n";
-
+  std::cout << "棰嗘睙婀朶"...\"\n";
 
 }

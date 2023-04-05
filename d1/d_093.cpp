@@ -4,35 +4,35 @@ class Role2 {
   int HP;
   int lv = 100;
   int damage = 200;
-  Role2(Role2& role) : HP(role.HP) {//Ö»»á³õÊ¼»¯Ö¸¶¨µÄÖµ
-    std::cout << "µ÷ÓÃÁË¸±±¾¹¹Ôìº¯Êý" << std::endl;
+  Role2(Role2& role) : HP(role.HP) {//åªä¼šåˆå§‹åŒ–æŒ‡å®šçš„å€¼
+    std::cout << "è°ƒç”¨äº†å‰¯æœ¬æž„é€ å‡½æ•°" << std::endl;
   }
 
 
   /* Role2(int _lv, int _damage) {
     std::cout << lv << damage << std::endl;
-    std::cout << "ÓÐ²Î¹¹Ôìº¯Êý" << std::endl;
+    std::cout << "æœ‰å‚æž„é€ å‡½æ•°" << std::endl;
     lv = _lv;
     damage = _damage;
     std::cout << lv << damage << std::endl;
   }*/
 
-  /*³ÉÔ±µÃ°´Ë³Ðò³õÊ¼»¯,HP³õÊ¼»¯Îªlv*3,µ«lv´ËÊ±ÖµÊÇÎ´ÖªµÄ*/
-  /*Role2(int _lv, int _damage) : lv(_lv), damage(_damage), HP(lv * 3) {//Ð§ÂÊ¸ü¸ß,Ä³Ð©Çé¿öÏÂÖ»ÄÜÊ¹ÓÃÕâÖÖ·½Ê½½øÐÐ³õÊ¼»¯
+  /*æˆå‘˜å¾—æŒ‰é¡ºåºåˆå§‹åŒ–,HPåˆå§‹åŒ–ä¸ºlv*3,ä½†lvæ­¤æ—¶å€¼æ˜¯æœªçŸ¥çš„*/
+  /*Role2(int _lv, int _damage) : lv(_lv), damage(_damage), HP(lv * 3) {//æ•ˆçŽ‡æ›´é«˜,æŸäº›æƒ…å†µä¸‹åªèƒ½ä½¿ç”¨è¿™ç§æ–¹å¼è¿›è¡Œåˆå§‹åŒ–
     std::cout << lv << damage << std::endl;
-    std::cout << "ÓÐ²Î¹¹Ôìº¯Êý" << std::endl;
+    std::cout << "æœ‰å‚æž„é€ å‡½æ•°" << std::endl;
     std::cout << lv << damage << std::endl;
   }*/
 
   Role2(int _lv, int _damage) : Role2(_lv) {
     std::cout << "lv:" << lv << "damage:" << damage << std::endl;
-    std::cout << "ÓÐ²Î¹¹Ôìº¯Êý" << std::endl;
+    std::cout << "æœ‰å‚æž„é€ å‡½æ•°" << std::endl;
 //    lv = _lv;
     damage = _damage;
     std::cout << "lv:" << lv << "damage:" << damage << std::endl;
   }
   Role2(int lv) {
-    std::cout << "Î¯ÍÐ¹¹Ôìº¯Êý" << std::endl;
+    std::cout << "å§”æ‰˜æž„é€ å‡½æ•°" << std::endl;
     this->lv = lv;
   }
   int GetHp() const {
@@ -59,12 +59,12 @@ int main() {
   Role2 t1(50, 20);
 //  std::cout << t1.GetHp() << std::endl;
 //  std::cout << t1.get << std::endl;
-  Role2 t2(t1);//±àÒëÆ÷Ä¬ÈÏÌá¹©ÁËÒ»¸ö¸±±¾¹¹Ôìº¯Êý,ÎÒÃÇÒ²¿ÉÒÔÊÖ¶¯Ö¸¶¨¸±±¾¹¹Ôìº¯Êý
+  Role2 t2(t1);//ç¼–è¯‘å™¨é»˜è®¤æä¾›äº†ä¸€ä¸ªå‰¯æœ¬æž„é€ å‡½æ•°,æˆ‘ä»¬ä¹Ÿå¯ä»¥æ‰‹åŠ¨æŒ‡å®šå‰¯æœ¬æž„é€ å‡½æ•°
   std::cout << "_________________" << std::endl;
 //  std::cout << t2.GetHp() << std::endl;
   std::cout << t2.GetLv() << std::endl;
   std::cout << t2.GetDamage() << std::endl;
 
-  Role2 t3=t1;//´ËÊ±Í¨¹ýµ÷ÓÃ¸±±¾¹¹Ôìº¯ÊýÀ´Íê³Ét3µÄ³õÊ¼»¯
-  t3=t1;//t3ÒÔ¼°Íê³É³õÊ¼»¯ÁË ²»»áÔÙµ÷ÓÃ¹¹Ôìº¯ÊýÁË
+  Role2 t3=t1;//æ­¤æ—¶é€šè¿‡è°ƒç”¨å‰¯æœ¬æž„é€ å‡½æ•°æ¥å®Œæˆt3çš„åˆå§‹åŒ–
+  t3=t1;//t3ä»¥åŠå®Œæˆåˆå§‹åŒ–äº† ä¸ä¼šå†è°ƒç”¨æž„é€ å‡½æ•°äº†
 }

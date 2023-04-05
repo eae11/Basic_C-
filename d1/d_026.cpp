@@ -2,30 +2,30 @@
 #include <conio.h>
 
 int main() {
-    unsigned password;
-    unsigned repassword;
-    input:
-    std::cout << "ÇëÊäÈë6Î»ÊıÃÜÂë" << std::endl;
-    std::cin >> password;
-    std::cout << "ÔÙ´ÎÈë6Î»ÊıÃÜÂë" << std::endl;
-    std::cin >> repassword;
-    if (password == repassword) {
-        if (password > 999999) {
-            goto input;
-        }
-        std::cout << "ÔÙ´ÎÊäÈëÈÎÒâ¼ü¿ªÊ¼ÆÆ½âÃÜÂë" << std::endl;
-
-        int testPassword = _getch();;
-        hack:
-        if (testPassword != password) {
-            testPassword++;
-            goto hack;
-        } else {
-            std::cout << "ÃÜÂëÆÆ½âÎª" << testPassword << std::endl;
-        }
-
-
-    } else {
-        goto input;
+  unsigned password;
+  unsigned repassword;
+  input:
+  std::cout << "è¯·è¾“å…¥6ä½æ•°å¯†ç " << std::endl;
+  std::cin >> password;
+  std::cout << "å†æ¬¡å…¥6ä½æ•°å¯†ç " << std::endl;
+  std::cin >> repassword;
+  if (password == repassword) {
+    if (password > 999999) {
+      goto input;
     }
+    std::cout << "å†æ¬¡è¾“å…¥ä»»æ„é”®å¼€å§‹ç ´è§£å¯†ç " << std::endl;
+
+    int testPassword = _getch();;
+    hack:
+    if (testPassword != password) {
+      testPassword++;
+      goto hack;
+    } else {
+      std::cout << "å¯†ç ç ´è§£ä¸º" << testPassword << std::endl;
+    }
+
+
+  } else {
+    goto input;
+  }
 }

@@ -8,11 +8,11 @@ class Role {
   int hp;
  public:
   int damage;
-  //mutableÉùÃ÷µÄ³ÉÔ±±äÁ¿¿ÉÒÔ±»const³ÉÔ±º¯ÊýÐÞ¸Ä
+  //mutableå£°æ˜Žçš„æˆå‘˜å˜é‡å¯ä»¥è¢«constæˆå‘˜å‡½æ•°ä¿®æ”¹
   mutable int lv;
   void Act(Role& role);
-  inline /*const*/ int GetHp() const { //constÐ´Ç°ÃæÊÇ´ú±í·µ»ØÖµÊÇconst Ð´ºóÃæ´ú±íÕâ¸öº¯ÊýÊÇconstÀàÐÍ
-    //ÔÚconst³ÉÔ±º¯ÊýÏÂ,thisÖ¸ÕëÒ²±ä³ÉÁËconstÖ¸Õë
+  inline /*const*/ int GetHp() const { //constå†™å‰é¢æ˜¯ä»£è¡¨è¿”å›žå€¼æ˜¯const å†™åŽé¢ä»£è¡¨è¿™ä¸ªå‡½æ•°æ˜¯constç±»åž‹
+    //åœ¨constæˆå‘˜å‡½æ•°ä¸‹,thisæŒ‡é’ˆä¹Ÿå˜æˆäº†constæŒ‡é’ˆ
 //    this->damage=2;
 
 //    SetLv(2);
@@ -26,7 +26,7 @@ class Role {
   Role& SetLv(int lv);
   const int& GetLv() const;
   int GetDamage() const;
-  int Role::GetDamage();
+  int GetDamage();
   bool IsBig(Role r1) {
     return r1.GetLv() > lv;
   }

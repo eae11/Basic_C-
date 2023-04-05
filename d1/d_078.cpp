@@ -1,22 +1,22 @@
 #include <iostream>
 #include "d_078_2.h"
 extern "C" {
-#include "d_078_1.h" //»¹¿ÉÒÔÕâÃ´Ğ´
+#include "d_078_1.h" //è¿˜å¯ä»¥è¿™ä¹ˆå†™
 }
 /*int ave() {
   return 2001;
 }*/
-/*int xve() {//CÎŞ·¨µ÷C++µÄº¯Êı
+/*int xve() {//Cæ— æ³•è°ƒC++çš„å‡½æ•°
   return 3;
 }*/
-//extern "C" int xve() {//³ı·Ç¶¨Òå³ÉC·ç¸ñµÄº¯Êı
+//extern "C" int xve() {//é™¤éå®šä¹‰æˆCé£æ ¼çš„å‡½æ•°
 //  return 3;
 //}
-int xve() {//Ò²¿ÉÒÔÔÚÍ·ÎÄ¼şÀï¶¨Òå
+int xve() {//ä¹Ÿå¯ä»¥åœ¨å¤´æ–‡ä»¶é‡Œå®šä¹‰
   return 3;
 }
 int main() {
-  std::cout << ave() << std::endl;//C++µ÷CÓïÑÔµÄº¯Êı
+  std::cout << ave() << std::endl;//C++è°ƒCè¯­è¨€çš„å‡½æ•°
   std::cout << pve() << std::endl;
 }
 

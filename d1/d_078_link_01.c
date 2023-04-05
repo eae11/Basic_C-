@@ -1,5 +1,5 @@
 #include "d_078_2.h"
-int ave() {//C语言函数是不能重载的
+int ave() {//C璇█鍑芥暟鏄笉鑳介噸杞界殑
   return 2000;
 }
 int pve() {

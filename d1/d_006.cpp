@@ -2,21 +2,21 @@
 
 
 int main() {
-    unsigned int x;
-    unsigned int y;
-    std::cout << "输入x" << std::endl;
-    std::cin >> x;
-    std::cout << "输入y" << std::endl;
-    std::cin >> y;
+  unsigned int x;
+  unsigned int y;
+  std::cout << "杈撳叆x" << std::endl;
+  std::cin >> x;
+  std::cout << "杈撳叆y" << std::endl;
+  std::cin >> y;
 
-    int a = x - y;
-    unsigned b = a;
+  int a = x - y;
+  unsigned b = a;
 
-    unsigned int big;
-    unsigned int small;
+  unsigned int big;
+  unsigned int small;
 
-    std::cout << "大的数是" << big << std::endl;
-    std::cout << "小的数是" << small << std::endl;
+  std::cout << "澶х殑鏁版槸" << big << std::endl;
+  std::cout << "灏忕殑鏁版槸" << small << std::endl;
 
 
 }

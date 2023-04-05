@@ -2,29 +2,29 @@
 
 int main() {
 //    std::shared_ptr<int> a{5};
-    std::shared_ptr<int> a{std::make_shared<int>(5)};
-    std::shared_ptr<int> b{a};
-    std::shared_ptr<int> c{b};
-    std::cout << *a << std::endl;
-    std::cout << a << "  " << b << std::endl;
-    /*std::make_shared²»Ö§³ÖÊı×é*/
+  std::shared_ptr<int> a{std::make_shared<int>(5)};
+  std::shared_ptr<int> b{a};
+  std::shared_ptr<int> c{b};
+  std::cout << *a << std::endl;
+  std::cout << a << "  " << b << std::endl;
+  /*std::make_sharedä¸æ”¯æŒæ•°ç»„*/
 //    std::shared_ptr<int[]> d{std::make_shared<int[]>(5)};
-    std::shared_ptr<int[]> d{new int[5]{1,2,3,4,5}};
+  std::shared_ptr<int[]> d{new int[5]{1,2,3,4,5}};
 
-/*¿ÉÒÔÓĞ¶à¸östd::shared ptrÖ¸ÏòÍ¬Ò»µØÖ·,Í¬Ò»µØÖ·ÏÂÖ»ÓĞµ±×îºóÒ»¸östd::shared_ptrÊÍ·ÅµÄÊ±ºò,²Å»áÊÍ·ÅÆäËùÕ¼ÓÃµÄÄÚ´æ¿Õ¼ä,
-std::shared_ptr»á¼ÇÂ¼µ±Ç°µØÖ·ÓĞ¶àÉÙ¸öÖÇÄÜÖ¸Õëµ÷ÓÃ*/
+/*å¯ä»¥æœ‰å¤šä¸ªstd::shared ptræŒ‡å‘åŒä¸€åœ°å€,åŒä¸€åœ°å€ä¸‹åªæœ‰å½“æœ€åä¸€ä¸ªstd::shared_ptré‡Šæ”¾çš„æ—¶å€™,æ‰ä¼šé‡Šæ”¾å…¶æ‰€å ç”¨çš„å†…å­˜ç©ºé—´,
+std::shared_pträ¼šè®°å½•å½“å‰åœ°å€æœ‰å¤šå°‘ä¸ªæ™ºèƒ½æŒ‡é’ˆè°ƒç”¨*/
 
-    long count = a.use_count();//»á·µ»Øµ±Ç°Ö¸Õë¹²ÓĞ¶àÉÙ¸ö¶ÔÏóµ÷ÓÃ
-    std::cout << count << std::endl;
+  long count = a.use_count();//ä¼šè¿”å›å½“å‰æŒ‡é’ˆå…±æœ‰å¤šå°‘ä¸ªå¯¹è±¡è°ƒç”¨
+  std::cout << count << std::endl;
 
-    bool flag = a.unique();//ÅĞ¶Ïµ±Ç°Ö¸ÕëÊÇ·ñÖ»ÓĞ±»Ò»¸ö¶ÔÏóËùµ÷ÓÃ
-    std::cout << flag << std::endl;
-/*reset()»á½«µ±Ç°¹²ÏíÖ¸ÕëÉèÖÃÎªnullptr,Í¬Ê±Èç¹ûµ±Ç°ÖÇÄÜÖ¸ÕëÊÇ×îºóÒ»¸öÓµÓĞ¸ÃÖ¸ÕëµÄ¶ÔÏó,ÄÇÃ´½«»áÊÍ·ÅÄÚ´æ*/
-    a.reset();
-    std::cout << a << "  " << b << "  " << c << std::endl;
-    b.reset();
-    std::cout << a << "  " << b << "  " << c << std::endl;
-    c.reset();
-    std::cout << a << "  " << b << "  " << c << std::endl;
+  bool flag = a.unique();//åˆ¤æ–­å½“å‰æŒ‡é’ˆæ˜¯å¦åªæœ‰è¢«ä¸€ä¸ªå¯¹è±¡æ‰€è°ƒç”¨
+  std::cout << flag << std::endl;
+/*reset()ä¼šå°†å½“å‰å…±äº«æŒ‡é’ˆè®¾ç½®ä¸ºnullptr,åŒæ—¶å¦‚æœå½“å‰æ™ºèƒ½æŒ‡é’ˆæ˜¯æœ€åä¸€ä¸ªæ‹¥æœ‰è¯¥æŒ‡é’ˆçš„å¯¹è±¡,é‚£ä¹ˆå°†ä¼šé‡Šæ”¾å†…å­˜*/
+  a.reset();
+  std::cout << a << "  " << b << "  " << c << std::endl;
+  b.reset();
+  std::cout << a << "  " << b << "  " << c << std::endl;
+  c.reset();
+  std::cout << a << "  " << b << "  " << c << std::endl;
 
 }

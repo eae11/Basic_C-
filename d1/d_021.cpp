@@ -3,18 +3,18 @@
 //#include <cctype>
 int main() {
 
-    std::cout << "´óĞ´×ÖÄ¸" << isupper('A') << std::endl;//ÊÇ·ñÊÇ´óĞ´×ÖÄ¸
-    std::cout << "Ğ¡Ğ´×ÖÄ¸" << islower('a') << std::endl;//Ğ¡Ğ´×ÖÄ¸
-    std::cout << "×ÖÄ¸" << isalpha('A') << std::endl;//×ÖÄ¸
-    std::cout << "Êı×Ö" << isdigit('5') << std::endl;//Êı×Ö
-    std::cout << "×ÖÄ¸»òÊı×Ö" << isalnum('A') << std::endl;//×ÖÄ¸»òÊı×Ö
-    std::cout << "¿Õ°×" << isspace('\f') << std::endl;//ÊÇ·ñ ¿Õ¸ñ \t \n \r  \f(»»Ò³·û) \v(´¹Ö±ÖÆ±í·û)
-    std::cout << "¿Õ¸ñ" << isblank('\n') << std::endl;//ÊÇ·ñ ¿Õ¸ñ \t
-    std::cout << "±êµã·ûºÅ" << ispunct('.') << std::endl;//±êµã·ûºÅ
-    std::cout << "ÄÜ·ñ´òÓ¡" << isprint('a') << std::endl;//ÄÜ·ñ´òÓ¡
-    std::cout << "ÊÇ·ñ¿ØÖÆ×Ö·û" << iscntrl('A') << std::endl;//ÊÇ·ñ¿ØÖÆ×Ö·û
-    std::cout << "ÊÇ·ñÍ¼ĞÎ×Ö·û" << isgraph('A') << std::endl;//ÊÇ·ñÍ¼ĞÎ×Ö·û
-    std::cout << "×ª´óĞ´" << toupper('A') << std::endl;//×ª´óĞ´
-    std::cout << "×ªĞ¡Ğ´" << tolower('A') << std::endl;//×ªĞ¡Ğ´
+  std::cout << "å¤§å†™å­—æ¯" << isupper('A') << std::endl;//æ˜¯å¦æ˜¯å¤§å†™å­—æ¯
+  std::cout << "å°å†™å­—æ¯" << islower('a') << std::endl;//å°å†™å­—æ¯
+  std::cout << "å­—æ¯" << isalpha('A') << std::endl;//å­—æ¯
+  std::cout << "æ•°å­—" << isdigit('5') << std::endl;//æ•°å­—
+  std::cout << "å­—æ¯æˆ–æ•°å­—" << isalnum('A') << std::endl;//å­—æ¯æˆ–æ•°å­—
+  std::cout << "ç©ºç™½" << isspace('\f') << std::endl;//æ˜¯å¦ ç©ºæ ¼ \t \n \r  \f(æ¢é¡µç¬¦) \v(å‚ç›´åˆ¶è¡¨ç¬¦)
+  std::cout << "ç©ºæ ¼" << isblank('\n') << std::endl;//æ˜¯å¦ ç©ºæ ¼ \t
+  std::cout << "æ ‡ç‚¹ç¬¦å·" << ispunct('.') << std::endl;//æ ‡ç‚¹ç¬¦å·
+  std::cout << "èƒ½å¦æ‰“å°" << isprint('a') << std::endl;//èƒ½å¦æ‰“å°
+  std::cout << "æ˜¯å¦æ§åˆ¶å­—ç¬¦" << iscntrl('A') << std::endl;//æ˜¯å¦æ§åˆ¶å­—ç¬¦
+  std::cout << "æ˜¯å¦å›¾å½¢å­—ç¬¦" << isgraph('A') << std::endl;//æ˜¯å¦å›¾å½¢å­—ç¬¦
+  std::cout << "è½¬å¤§å†™" << toupper('A') << std::endl;//è½¬å¤§å†™
+  std::cout << "è½¬å°å†™" << tolower('A') << std::endl;//è½¬å°å†™
 
 }

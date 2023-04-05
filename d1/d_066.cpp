@@ -1,48 +1,48 @@
 #include <iostream>
 
-typedef char(*pfAdd)(int,int); //ÉùÃ÷Ò»¸öº¯ÊıÖ¸ÕëÀàĞÍ pfAdd ¾ÍÏàµ±ÓÚchar (*) (int,int) Add
-using pFAdd = char (*)(int,int);//ÉùÃ÷Ò»¸öº¯ÊıÖ¸ÕëÀàĞÍ
+typedef char(*pfAdd)(int,int); //å£°æ˜ä¸€ä¸ªå‡½æ•°æŒ‡é’ˆç±»å‹ pfAdd å°±ç›¸å½“äºchar (*) (int,int) Add
+using pFAdd = char (*)(int,int);//å£°æ˜ä¸€ä¸ªå‡½æ•°æŒ‡é’ˆç±»å‹
 using pRole = int (*)(int hp,int mp);
 
 struct Role {
-    int hp;
-    int mp;
+  int hp;
+  int mp;
 };
 
 int Test(int a,int b,pRole x) {
-    return x(a,b);
+  return x(a,b);
 }
 
 int Exp(Role rl) {
-    return rl.hp + rl.mp;
+  return rl.hp + rl.mp;
 }
 
 int AddX(int a,int b) {
-    return a * 10 + b;
+  return a * 10 + b;
 }
 
 int Add(int a,int b) {
-    return (a + b) / 2;
+  return (a + b) / 2;
 }
 
 int main() {
-    int (*pxAdd)(int,int) = Add; //ÉùÃ÷º¯ÊıÖ¸Õë
-    std::cout << pxAdd(110,20) << std::endl;
+  int (*pxAdd)(int,int) = Add; //å£°æ˜å‡½æ•°æŒ‡é’ˆ
+  std::cout << pxAdd(110,20) << std::endl;
 
-    pfAdd pAdd = (pfAdd) Add;
-    pFAdd pAdd1 = (pFAdd) AddX;
+  pfAdd pAdd = (pfAdd) Add;
+  pFAdd pAdd1 = (pFAdd) AddX;
 
-    std::cout << pAdd(110,20) << std::endl;
-    std::cout << pAdd1(6,6) << std::endl;
+  std::cout << pAdd(110,20) << std::endl;
+  std::cout << pAdd1(6,6) << std::endl;
 
 
-    Role rl{100,350};
+  Role rl{100,350};
 
-    Exp(rl);
+  Exp(rl);
 
-    std::cout << Test(120,2031,(pRole) Exp) << std::endl;
+  std::cout << Test(120,2031,(pRole) Exp) << std::endl;
 
-    pRole pExp = (pRole) Exp;
+  pRole pExp = (pRole) Exp;
 
-    std::cout << pExp(100,350) << std::endl;
+  std::cout << pExp(100,350) << std::endl;
 }

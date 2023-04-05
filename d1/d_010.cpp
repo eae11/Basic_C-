@@ -2,16 +2,16 @@
 #include <locale>
 
 int main() {
-    int a{ 10 };
+  int a{ 10 };
 
-    int b{ 5 };
+  int b{ 5 };
 
-    int c{ 6 };
+  int c{ 6 };
 
-    c = b + a++;
-    c = b++ + a;
+  c = b + a++;
+  c = b++ + a;
 
-    c=b+++a; // b+  ++a;   b++ +a; ºó×ºÓÅÏÈ,·­Òë³ÉºóÃæÄÇÖÖ
-    return 0;
+  c=b+++a; // b+  ++a;   b++ +a; åç¼€ä¼˜å…ˆ,ç¿»è¯‘æˆåé¢é‚£ç§
+  return 0;
 
 }

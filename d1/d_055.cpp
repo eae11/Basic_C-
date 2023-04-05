@@ -27,7 +27,7 @@ int main() {
 
   string str5{"123456"};
   //    str5 = str5.substr(1);//23456
-  str5 = str5.substr(1, 3);//´Ó1¿ªÊ¼½ØÈ¡3¸ö
+  str5 = str5.substr(1, 3);//ä»1å¼€å§‹æˆªå–3ä¸ª
   std::cout << str5 << std::endl;
 
   string str6{"0123456789"};
@@ -36,17 +36,17 @@ int main() {
   /*char *str7 = (char *) "123456";
   char *str8 = (char *) "123456";
 
-  std::cout << (str7 == str8) << std::endl;//Ô­ÉúÅĞ¶Ï²»ÁË*/
+  std::cout << (str7 == str8) << std::endl;//åŸç”Ÿåˆ¤æ–­ä¸äº†*/
 
   /* string str9{"123456"};
    string str10{};
    std::cin>>str10;
-   std::cout << (str9==str10) << std::endl;//ÊäÈë123456 ÏàµÈ*/
+   std::cout << (str9==str10) << std::endl;//è¾“å…¥123456 ç›¸ç­‰*/
 
   string str11{"abcd"};
   std::cout << str11.compare("abcd") << std::endl;//0
-  std::cout << str11.compare("bcde") << std::endl;//·µ»Ø¸ºÊı
-  std::cout << str11.compare("ABCD") << std::endl;//·µ»ØÕıÊı
+  std::cout << str11.compare("bcde") << std::endl;//è¿”å›è´Ÿæ•°
+  std::cout << str11.compare("ABCD") << std::endl;//è¿”å›æ­£æ•°
 
   string str12{"abdefff"};
   std::cout << str12.compare(4, 3, "fff") << std::endl;
@@ -55,11 +55,11 @@ int main() {
 
   string str13 = "studengId:560001username:56203;asdasdsadasdastudengId:560002";
   string studentId;
-  //find(ÒªËÑË÷µÄÄÚÈİ,¿ªÊ¼ËÑË÷µÄÎ»ÖÃ); Î´ÕÒµ½·µ»Ø-1
-  //find(ÒªËÑË÷µÄÄÚÈİ,¿ªÊ¼ËÑË÷µÄÎ»ÖÃ,ÒªÄÉÈëËÑË÷µÄ³¤¶È);²ÎÊı2ÊÇ¶ÔÓÚµ÷ÓÃ´Ëº¯ÊıµÄ×Ö·û´®,²ÎÊı3ÊÇ¶ÔÓÚ²ÎÊı1
-//    int posit = str13.find("studengId:xxxx",0,10);//´ÓµÚ0¸ö¿ªÊ¼²é,studengId:xxxx ËÑÇ°Ê®¸ö×Ö·û´®
-  //µ¹×ÅËÑ
-  int posit = str13.rfind("studengId:xxxx", str13.length() - 1, 10);//´Ó×îºó¿ªÊ¼µ¹×ÅËÑ ËÑÇ°Ê®¸ö×Ö·û´®
+  //find(è¦æœç´¢çš„å†…å®¹,å¼€å§‹æœç´¢çš„ä½ç½®); æœªæ‰¾åˆ°è¿”å›-1
+  //find(è¦æœç´¢çš„å†…å®¹,å¼€å§‹æœç´¢çš„ä½ç½®,è¦çº³å…¥æœç´¢çš„é•¿åº¦);å‚æ•°2æ˜¯å¯¹äºè°ƒç”¨æ­¤å‡½æ•°çš„å­—ç¬¦ä¸²,å‚æ•°3æ˜¯å¯¹äºå‚æ•°1
+//    int posit = str13.find("studengId:xxxx",0,10);//ä»ç¬¬0ä¸ªå¼€å§‹æŸ¥,studengId:xxxx æœå‰åä¸ªå­—ç¬¦ä¸²
+  //å€’ç€æœ
+  int posit = str13.rfind("studengId:xxxx", str13.length() - 1, 10);//ä»æœ€åå¼€å§‹å€’ç€æœ æœå‰åä¸ªå­—ç¬¦ä¸²
   studentId = str13.substr(posit + strlen("studengId:"), 6);
   std::cout << studentId << std::endl;
 
@@ -82,9 +82,9 @@ int main() {
 //    strId.replace(3,4,"zhangsan!");
 //    strId.replace(3,4,6,'*');
 
-  strId.erase(3, 3);//×Ö·û´®É¾³ı
+  strId.erase(3, 3);//å­—ç¬¦ä¸²åˆ é™¤
 //    strId.erase(3);
-//    strId.clear();//È«É¾³ı
+//    strId.clear();//å…¨åˆ é™¤
   std::cout << strId << std::endl;
 
 }
